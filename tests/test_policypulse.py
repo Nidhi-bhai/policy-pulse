@@ -87,6 +87,36 @@ class TaggerTests(unittest.TestCase):
         )
         self.assertIn("exports", item["sectors"])
 
+    def test_pharma_inside_a_company_name_is_not_the_pharma_sector(self):
+        item = annotate(
+            {
+                "title": (
+                    "SEBI Order for Compliance dated 26.10.2026 issued against "
+                    "Add Life Pharma Ltd in the matter of Add Life Pharma Ltd"
+                ),
+                "excerpt": "",
+            }
+        )
+        self.assertNotIn("pharma", item["sectors"])
+        self.assertTrue(item["impact_from_notice"])
+        self.assertIn("compliance", item["impact"].lower())
+
+    def test_bank_ltd_does_not_tag_banking_unless_the_notice_says_so(self):
+        party = annotate({"title": "Recovery order issued against Yes Bank Ltd", "excerpt": ""})
+        self.assertNotIn("banking", party["sectors"])
+        stated = annotate({"title": "Yes Bank Ltd and the revised repo rate", "excerpt": ""})
+        self.assertIn("banking", stated["sectors"])
+
+    def test_exporters_outside_a_company_name_still_count(self):
+        item = annotate({"title": "Public notice issued to all exporters of rice", "excerpt": ""})
+        self.assertIn("exports", item["sectors"])
+        self.assertIn("agri", item["sectors"])
+
+    def test_impact_note_is_absent_when_the_notice_states_none(self):
+        item = annotate({"title": "Minutes of the committee meeting", "excerpt": ""})
+        self.assertEqual(item["impact"], "")
+        self.assertFalse(item["impact_from_notice"])
+
 
 class ArchiveTests(unittest.TestCase):
     def test_merge_keeps_old_items_and_prefers_english_title(self):
@@ -217,6 +247,22 @@ class DgftResilienceTests(unittest.TestCase):
         self.assertEqual(body, b"ok")
         self.assertIn("dgft.gov.in", final)
 
+    def test_fetch_uses_curl_after_a_final_403(self):
+        def fake_urlopen(request, timeout=45, context=None):
+            raise HTTPError(request.full_url, 403, "Forbidden", hdrs=None, fp=None)
+
+        class Completed:
+            returncode = 0
+            stdout = b"<table id='metaTable'>https://content.dgft.gov.in/x.pdf</table>\n200 https://www.dgft.gov.in/final"
+            stderr = b""
+
+        with patch("policypulse.http.urlopen", fake_urlopen), patch("policypulse.http.time.sleep"), patch(
+            "policypulse.http.shutil.which", return_value="/usr/bin/curl"
+        ), patch("policypulse.http.subprocess.run", return_value=Completed()):
+            final, body, _ctype = fetch("https://www.dgft.gov.in/CP/?opt=trade-notice", retries=0)
+        self.assertEqual(final, "https://www.dgft.gov.in/final")
+        self.assertIn(b"content.dgft.gov.in", body)
+
 
 class IngestGuardTests(unittest.TestCase):
     def test_failed_dgft_must_not_shrink_the_archive(self):
@@ -243,8 +289,17 @@ class SiteCopyTests(unittest.TestCase):
             self.assertNotIn("example.com", page)
         self.assertIn("updates daily", home)
         self.assertIn("2023–26 backfill", home)
-        self.assertIn("weekly brief every Monday, at your private link", pro)
-        self.assertIn('id="pro-email"', pro)
+        self.assertIn("a link to the unlisted weekly Pro brief page, updated every Monday; no renewal, no account", pro)
+        self.assertIn("sector-sorted weekly list with official links and an impact note where the notice states one", pro)
+        self.assertIn("Lost your link? Email nidhi69n@gmail.com with your PayPal order id.", pro)
+        self.assertIn("Not legal, tax or investment advice.", home)
+        self.assertIn("Not legal, tax or investment advice.", pro)
+        self.assertNotIn("pro-email", pro)
+        self.assertNotIn("subscription", pro.lower())
+        self.assertNotIn("PLAN_ID", pro)
+        self.assertNotIn("form URL", pro)
+        self.assertNotIn("Add <code>PAYPAL_CLIENT_ID</code>", pro)
+        self.assertNotIn("private", pro.lower())
         self.assertNotIn("e31e1b36d2727e090f84fe9c60ab2c15", pro)
 
     def test_backfill_chip_uses_the_source_date(self):
@@ -268,16 +323,42 @@ class SiteCopyTests(unittest.TestCase):
         self.assertIn("Date not in source", undated_html)
         self.assertNotIn("Backfill", undated_html)
 
-    def test_private_brief_is_noindex_and_omits_undated_items(self):
+    def test_sources_page_shows_the_recorded_fetch(self):
+        html = build_site.page_sources(
+            {
+                "generated_at": "2026-10-27T13:46:07+05:30",
+                "sources": [
+                    {"name": "DGFT", "ok": False, "fetched": 0, "error": "HTTP Error 403: Forbidden"},
+                    {"name": "PIB", "ok": True, "fetched": 31, "error": None},
+                ],
+            }
+        )
+        self.assertIn("2026-10-27T13:46:07+05:30", html)
+        self.assertIn("Failed", html)
+        self.assertIn("HTTP Error 403: Forbidden", html)
+        self.assertIn("Fetched", html)
+
+    def test_unlisted_brief_is_noindex_and_omits_undated_items(self):
         items = [
             {
                 "id": "gst-1",
                 "date": "2026-10-26",
                 "title": "GST ticker",
                 "sectors": ["gst"],
-                "impact": "Open the source before you change a filing.",
+                "impact": "The official text says an existing instruction is amended or revised.",
+                "impact_from_notice": True,
                 "url": "https://cbic-gst.gov.in/tickers.html",
                 "source_name": "CBIC / GST",
+            },
+            {
+                "id": "plain",
+                "date": "2026-10-27",
+                "title": "Committee minutes",
+                "sectors": [],
+                "impact": "The business effect cannot be read off the headline alone.",
+                "impact_from_notice": False,
+                "url": "https://pib.gov.in/minutes",
+                "source_name": "PIB",
             },
             {
                 "id": "nodate",
@@ -291,15 +372,18 @@ class SiteCopyTests(unittest.TestCase):
         ]
         groups = build_site.group_by_iso_week(items)
         self.assertEqual(list(groups), ["2026-W44"])
-        self.assertEqual(groups["2026-W44"][0]["id"], "gst-1")
+        self.assertEqual([row["id"] for row in groups["2026-W44"]], ["plain", "gst-1"])
         monday, sunday = build_site.week_bounds("2026-W44")
         self.assertEqual(monday, date(2026, 10, 26))
         self.assertEqual(sunday, date(2026, 11, 1))
         page = build_site.page_brief(groups["2026-W44"], "2026-W44", monday, sunday, "a" * 32, True)
         self.assertIn("noindex, nofollow", page)
         self.assertIn("GST ticker", page)
+        self.assertIn("amended or revised", page)
+        self.assertNotIn("cannot be read off the headline", page)
         self.assertNotIn("Undated Hindi headline", page)
-        self.assertIn("weekly brief every Monday, at your private link", page)
+        self.assertIn("sector-sorted weekly list with official links and an impact note where the notice states one", page)
+        self.assertNotIn("private", page.lower())
         robots = build_site.robots_txt("a" * 32)
         self.assertIn("Disallow: /policy-pulse/pro/" + ("a" * 32) + "/", robots)
         self.assertIn("Disallow: /pro/" + ("a" * 32) + "/", robots)
@@ -318,11 +402,12 @@ class SiteCopyTests(unittest.TestCase):
         """
         rendered = build_site.render_config(existing, "e31e1b36d2727e090f84fe9c60ab2c15")
         self.assertIn("BAAb5cq2I0Xx3lFhRJNBjnuGCVT5VDtWfWHgAuSasCoaA_F4cFzLmDWcDmYhsXG6panQVSaRPR3gvrgE9w", rendered)
-        self.assertIn("P-7U340289BA306012CNLQF4BI", rendered)
+        self.assertNotIn("PLAN_ID", rendered)
+        self.assertNotIn("P-7U340289BA306012CNLQF4BI", rendered)
+        self.assertNotIn("subscription", rendered.lower())
         self.assertIn("mailto:nidhi69n@gmail.com?subject=PolicyPulse%20digest", rendered)
         self.assertIn("pro/e31e1b36d2727e090f84fe9c60ab2c15/", rendered)
         self.assertNotIn("example.com", rendered)
-        self.assertEqual(build_site._config_string(rendered, "PRO_FORM_ACTION"), "")
 
 
 if __name__ == "__main__":

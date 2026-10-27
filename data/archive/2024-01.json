@@ -18,11 +18,12 @@
       "sectors": [],
       "what_changed": "Listed by the source as DGFT public notice 38/2023 (2024), DGFT. Official headline: “Enlistment of chambers /agencies under Appendix 2E of FTP, 2023 reg.”.",
       "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "3b0f8394f3701231",
@@ -46,7 +47,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "b8f74143fc55318f",
@@ -70,7 +72,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "afad7bc9c02169a8",
@@ -88,11 +91,12 @@
       "sectors": [],
       "what_changed": "Listed by the source as DGFT public notice 37/2023 (2024), DGFT. Official headline: “Extension of Validity of Pre-Shipment Inspection Agencies (PSIAs)”.",
       "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "52c089c03cddc04a",
@@ -116,7 +120,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "362714ae1789f144",
@@ -136,11 +141,12 @@
       ],
       "what_changed": "Listed by the source as DGFT public notice 36/2023 (2023-24), DGFT. Official headline: “Allocation of 8606 MTRV of raw cane sugar to USA under TRQ Scheme for US fiscal year 2024.”.",
       "who_affected": "Sector tags come only from words in that text: Agriculture. A tag means the word appeared. It does not mean every firm in that sector is covered.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "0653fb6c24889c36",
@@ -164,7 +170,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     }
   ]
 }

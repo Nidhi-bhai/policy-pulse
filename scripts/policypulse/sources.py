@@ -399,6 +399,12 @@ def fetch_dgft() -> list[dict]:
     items = []
     seen: set[str] = set()
     failures: list[str] = []
+    # A homepage visit stores any session cookie before the listing requests.
+    # Actions runners are often refused until that cookie exists.
+    try:
+        fetch_text("https://www.dgft.gov.in/", referer="https://www.dgft.gov.in/", retries=1, timeout=30)
+    except Exception as exc:
+        print(f"dgft warmup: {exc}", file=sys.stderr)
     for feed, instrument, _url in DGFT_PAGES:
         html = ""
         last_error: Exception | None = None

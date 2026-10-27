@@ -21,11 +21,12 @@
       ],
       "what_changed": "Listed by the source as DGFT trade notice 18/2024-25 (2024-25), DGFT. Official headline: “Extension of Interest Equalisation Scheme (IES) for Pre and Post shipment Rupee Export Credit for three months beyond 30th September, 2024.”.",
       "who_affected": "Sector tags come only from words in that text: Exports & trade, Banking & finance. A tag means the word appeared. It does not mean every firm in that sector is covered.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "86fbe53cf37ad7e3",
@@ -49,7 +50,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "b27b0e88db2a8c7a",
@@ -74,7 +76,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "af720ef306a511a1",
@@ -95,11 +98,12 @@
       ],
       "what_changed": "Listed by the source as DGFT public notice 25/2024-25 (2024-25), DGFT. Official headline: “Allocation of quantity 5841 MT of Sugar by EU for export from India under TRQ for the year 2024-25 (October 2024 to September 2025) -regarding”.",
       "who_affected": "Sector tags come only from words in that text: Exports & trade, Agriculture. A tag means the word appeared. It does not mean every firm in that sector is covered.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "9bbdb87f240f9dbb",
@@ -123,7 +127,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "9af0a4795633a33b",
@@ -147,7 +152,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "e3463e71605647e3",
@@ -165,11 +171,12 @@
       "sectors": [],
       "what_changed": "Listed by the source as DGFT trade notice 17/2024-2025 (2024-2025), DGFT. Official headline: “Amendments under Interest Equalisation Scheme-regarding”.",
       "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "d311d871842b5d9a",
@@ -193,7 +200,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "9502e480f44cca9b",
@@ -213,11 +221,12 @@
       ],
       "what_changed": "Listed by the source as DGFT notification 29 (2024-25), DGFT. Official headline: “Extension in Import Period for Yellow Peas under ITC(HS) Code 07131010 of Chapter 07 of ITC (HS) 2022, Schedule –I(Import Policy) -reg”.",
       "who_affected": "Sector tags come only from words in that text: Exports & trade. A tag means the word appeared. It does not mean every firm in that sector is covered.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "8f02eb39b01d9b66",
@@ -235,11 +244,12 @@
       "sectors": [],
       "what_changed": "Listed by the source as DGFT public notice 23/2024-2025 (2024), DGFT. Official headline: “Further abeyance of Public Notice No. 05/2024 dated 27.05.2024 until 31.10.2024”.",
       "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "be857b2e6264840f",
@@ -263,7 +273,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "e73c83f08165b5f4",
@@ -283,11 +294,12 @@
       ],
       "what_changed": "Listed by the source as DGFT notification 26/2024-25 (2024-25), DGFT. Official headline: “Export of Red Sanders wood by Forest, Environment & Climate Change Department, Government of Odisha - Extension of time regarding.”.",
       "who_affected": "Sector tags come only from words in that text: Exports & trade. A tag means the word appeared. It does not mean every firm in that sector is covered.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "4c5d0e899b3cdf96",
@@ -307,11 +319,12 @@
       ],
       "what_changed": "Listed by the source as DGFT public notice 22/2024-25 (2024-25), DGFT. Official headline: “Allocation of 8606 Metric Tonnes Raw Value (MTRV) of raw cane sugar to USA under TRQ scheme for US Fiscal year 2025-regarding”.",
       "who_affected": "Sector tags come only from words in that text: Agriculture. A tag means the word appeared. It does not mean every firm in that sector is covered.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "375229de6a0f6bb5",
@@ -335,7 +348,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     }
   ]
 }

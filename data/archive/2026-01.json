@@ -24,7 +24,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "60a06afeb24bb274",
@@ -46,7 +47,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "6bafbbee1dae14c4",
@@ -67,11 +69,12 @@
       ],
       "what_changed": "Listed by the source as DGFT trade notice 22/2025-26 (2025-2026), DGFT. Official headline: “Amendments to Guidelines for Interest Subvention Support for Pre- and Post Shipment Export Credit under EXPORT PROMOTION MISSION – NIRYAT PROTSAHAN – regarding”.",
       "who_affected": "Sector tags come only from words in that text: Exports & trade, Banking & finance. A tag means the word appeared. It does not mean every firm in that sector is covered.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "691c879ce0e168ad",
@@ -95,7 +98,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "6efc38a732454c1c",
@@ -116,11 +120,12 @@
       ],
       "what_changed": "Listed by the source as DGFT public notice 44/2025-26 (2025-26), DGFT. Official headline: “Modalities for export of Wheat Flour and related products under HS Code 1101 – regarding.”.",
       "who_affected": "Sector tags come only from words in that text: Exports & trade, Agriculture. A tag means the word appeared. It does not mean every firm in that sector is covered.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "28cd0a122a2b12a5",
@@ -142,7 +147,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "b1af30342a90b8bd",
@@ -160,11 +166,12 @@
       "sectors": [],
       "what_changed": "Listed by the source as DGFT public notice 43/2025-26 (2026), DGFT. Official headline: “Enlistment under Appendix 2E of FTP, 2023-Agency Authorised to issue Certificate of Origin (Non-Preferential)-regarding.”.",
       "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "63cbba7a4e6ff67f",
@@ -188,7 +195,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "642d56a60906e196",
@@ -209,11 +217,12 @@
       ],
       "what_changed": "Listed by the source as DGFT trade notice 20/2025-26 (2025-2026), DGFT. Official headline: “Guidelines for Interest Subvention Support for Pre- and Post Shipment Export Credit”.",
       "who_affected": "Sector tags come only from words in that text: Exports & trade, Banking & finance. A tag means the word appeared. It does not mean every firm in that sector is covered.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "5575b46cb66ec8de",
@@ -234,11 +243,12 @@
       ],
       "what_changed": "Listed by the source as DGFT trade notice 21/2025-26 (2025-2026), DGFT. Official headline: “Guidelines for Collateral Support for Export Credit”.",
       "who_affected": "Sector tags come only from words in that text: Exports & trade, Banking & finance. A tag means the word appeared. It does not mean every firm in that sector is covered.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     }
   ]
 }

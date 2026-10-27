@@ -24,7 +24,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "990c7dede762c76c",
@@ -44,11 +45,12 @@
       ],
       "what_changed": "Listed by the source as DGFT notification 23/2025-26 (2025-26), DGFT. Official headline: “Extension in Minimum Import Price (MIP) Condition on Soda Ash covered under Chapter 28 of ITC (HS) 2022, Schedule-I(Import Policy)-reg.”.",
       "who_affected": "Sector tags come only from words in that text: Exports & trade. A tag means the word appeared. It does not mean every firm in that sector is covered.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "bfecec07665c42b9",
@@ -72,7 +74,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "6fe852b61f548b03",
@@ -96,7 +99,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "f70a6334cdeb7b91",
@@ -118,7 +122,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "461e28138b171a9d",
@@ -142,7 +147,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "b3bb597f4f93c139",
@@ -166,7 +172,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "f0297c9040af6a9d",
@@ -191,7 +198,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "909e705d3335c4e7",
@@ -217,7 +225,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "f98ba4aeb71f8349",
@@ -241,7 +250,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "a744f8e917537375",
@@ -265,7 +275,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "c2277fdb07bb3e47",
@@ -283,11 +294,12 @@
       "sectors": [],
       "what_changed": "Listed by the source as DGFT trade notice 05/2025-26 (2025-26), DGFT. Official headline: “Rollout of ‘Source from India’ on Trade Connect ePlatform for all Status Holders”.",
       "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "1cd2867ca9f25fcd",
@@ -309,7 +321,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "f27c28583897e4a3",
@@ -333,7 +346,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "1b458b7111989df3",
@@ -351,11 +365,12 @@
       "sectors": [],
       "what_changed": "Listed by the source as DGFT public notice 9 (2025-26), DGFT. Official headline: “Fixation of SION No. A-3686 under\"Chemical and Allied Product\" (Product Code 'A')”.",
       "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     }
   ]
 }

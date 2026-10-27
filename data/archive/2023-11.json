@@ -20,11 +20,12 @@
       ],
       "what_changed": "Listed by the source as DGFT notification 46/2023 (2023-24), DGFT. Official headline: “Export of Food commodities through National Cooperative Exports Limited (NCEL).”.",
       "who_affected": "Sector tags come only from words in that text: Exports & trade. A tag means the word appeared. It does not mean every firm in that sector is covered.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "5bc201afbc160546",
@@ -44,11 +45,12 @@
       ],
       "what_changed": "Listed by the source as DGFT notification 45/2023 (2023-24), DGFT. Official headline: “Imposition of Minimum Export Price on export of Onions”.",
       "who_affected": "Sector tags come only from words in that text: Exports & trade. A tag means the word appeared. It does not mean every firm in that sector is covered.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "f7b113fef40da059",
@@ -72,7 +74,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "efabcf6f44efc380",
@@ -92,11 +95,12 @@
       ],
       "what_changed": "Listed by the source as DGFT trade notice 34/2023-24 (2023-24), DGFT. Official headline: “Notice for Calcined Petroleum Coke(CPC) Manufacturers regarding import of Raw Pet Coke -reg.”.",
       "who_affected": "Sector tags come only from words in that text: Exports & trade. A tag means the word appeared. It does not mean every firm in that sector is covered.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "2e6620cb4c5d4353",
@@ -117,11 +121,12 @@
       ],
       "what_changed": "Listed by the source as DGFT notification 43/2023 (2023-24), DGFT. Official headline: “Incorporation of Policy Condition for export of Non-basmati rice under HS Code 10063090”.",
       "who_affected": "Sector tags come only from words in that text: Exports & trade, Agriculture. A tag means the word appeared. It does not mean every firm in that sector is covered.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "5093e91e68985e7d",
@@ -137,15 +142,17 @@
       "body_name": "DGFT",
       "language": "en",
       "sectors": [
+        "exports",
         "banking"
       ],
       "what_changed": "Listed by the source as DGFT trade notice 33/2023-24 (2023-24), DGFT. Official headline: “Pilot Launch of the Upgraded Electronic Bank Realization Certificate (eBRC) system for self-certification by Exporters -reg”.",
-      "who_affected": "Sector tags come only from words in that text: Banking & finance. A tag means the word appeared. It does not mean every firm in that sector is covered.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "who_affected": "Sector tags come only from words in that text: Exports & trade, Banking & finance. A tag means the word appeared. It does not mean every firm in that sector is covered.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "12f5fc8ac02cd643",
@@ -165,11 +172,12 @@
       ],
       "what_changed": "Listed by the source as DGFT trade notice 32/2023 (2023-24). Official headline: “Introduction of Centralized Video Conference Facility at DGFT Headquarters”.",
       "who_affected": "Sector tags come only from words in that text: Exports & trade. A tag means the word appeared. It does not mean every firm in that sector is covered.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     }
   ]
 }

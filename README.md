@@ -17,7 +17,7 @@ The site is static HTML in `docs/`. A daily GitHub Actions job refreshes the arc
 
 Items are stored in `data/items.json` with the source URL and date. `data/archive/YYYY-MM.json` keeps a growing month-by-month history. A later run merges by id and does not drop older items. The public feed updates daily. The archive includes a 2023–26 backfill, and each notice is labeled with the date on the official document.
 
-DGFT listings are fetched with a browser User-Agent, retries, and fallback URLs. If every endpoint fails, the run keeps the DGFT rows already in the archive and logs that.
+DGFT listings are fetched with a browser User-Agent, a homepage cookie, retries, fallback URLs, and a curl retry when Python is refused. If every endpoint fails, the run keeps the DGFT rows already in the archive and logs that. The Sources page shows the latest ingest result.
 
 ## Pages
 
@@ -25,7 +25,7 @@ DGFT listings are fetched with a browser User-Agent, retries, and fallback URLs.
 - One SEO page per notice
 - `feed.xml` and `sitemap.xml`
 - Free daily digest signup. The form opens a mail draft to nidhi69n@gmail.com. It is hidden if that address is missing. A `DIGEST_FORM_ACTION` URL posts the form instead.
-- Pro is a weekly brief every Monday, at a private link, $9/month via PayPal. The link is unlisted: out of the sitemap, disallowed in robots.txt, and marked noindex. PayPal reveals it after approval. An optional email is sent to a Google Form only when `PRO_FORM_ACTION` is set.
+- Pro is a one-time $9 PayPal payment for a link to the unlisted weekly Pro brief page, updated every Monday; no renewal, no account. The link is left out of the sitemap, disallowed in robots.txt, and marked noindex. After payment the browser stores the link and the PayPal order id.
 
 ## Run it locally
 
@@ -41,13 +41,12 @@ Open `docs/index.html`.
 
 ## PayPal and the digest
 
-`docs/config.js` holds the public PayPal client id and the $9/month plan id. The PayPal secret stays out of the repository.
+`docs/config.js` holds the public PayPal client id. The button captures a one-time $9 order. The PayPal secret stays out of the repository. There is no plan id.
 
-- `PAYPAL_CLIENT_ID` and `PLAN_ID` turn on the subscription button
+- `PAYPAL_CLIENT_ID` turns on the $9 PayPal button
 - `DIGEST_MAILTO` is `mailto:nidhi69n@gmail.com?subject=PolicyPulse%20digest`
 - `DIGEST_FORM_ACTION` is an optional static form endpoint for the daily digest
-- `PRO_BRIEF_PATH` is the unlisted weekly brief, revealed after PayPal approves
-- `PRO_FORM_ACTION` is an optional Google Form for the subscription id and email. Empty means that post is skipped
+- `PRO_BRIEF_PATH` is the unlisted weekly brief, shown after PayPal captures the order
 
 The brief slug lives in `web/pro-slug.txt`. Set the repository secret `POLICYPULSE_PRO_SLUG` only when a build should publish a different path. The next archive commit will contain that path, because GitHub Pages serves the files in `docs/`.
 

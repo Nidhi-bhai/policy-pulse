@@ -2,7 +2,11 @@
 
 from __future__ import annotations
 
+import http.cookiejar
+import shutil
 import ssl
+import subprocess
+import sys
 import time
 from pathlib import Path
 from urllib.error import HTTPError, URLError
@@ -19,6 +23,10 @@ USER_AGENT = (
 # Status codes that are often transient or bot-walls. A later attempt, or
 # another endpoint, can still succeed. 404 is a real miss and is not retried.
 RETRY_STATUS = {403, 408, 429, 500, 502, 503, 504}
+# Statuses where curl, with a cookie jar, sometimes gets the page Python was refused.
+CURL_FALLBACK_STATUS = {403, 429, 503}
+COOKIE_JAR = http.cookiejar.CookieJar()
+CURL_COOKIE_FILE = Path("/tmp/policypulse-cookies.txt")
 
 
 def ssl_context() -> ssl.SSLContext:
@@ -61,6 +69,69 @@ def should_retry(exc: BaseException, attempt: int, retries: int) -> bool:
     return isinstance(exc, (URLError, TimeoutError))
 
 
+def _give_up(exc: BaseException, url: str, timeout: int, referer: str | None) -> tuple[str, bytes, str]:
+    """Last chance for a 403 from a runner IP: curl with the same browser headers and cookies."""
+    if isinstance(exc, HTTPError) and exc.code in CURL_FALLBACK_STATUS and shutil.which("curl"):
+        try:
+            return _fetch_curl(url, timeout=timeout, referer=referer)
+        except Exception as curl_exc:
+            print(f"curl fallback failed for {url}: {curl_exc}", file=sys.stderr)
+    raise exc
+
+
+def _fetch_curl(url: str, timeout: int, referer: str | None) -> tuple[str, bytes, str]:
+    curl = shutil.which("curl")
+    if not curl:
+        raise URLError("curl is not installed")
+    cmd = [
+        curl,
+        "-sS",
+        "-L",
+        "--compressed",
+        "--retry",
+        "2",
+        "--retry-all-errors",
+        "--retry-delay",
+        "2",
+        "--max-time",
+        str(timeout),
+        "-A",
+        USER_AGENT,
+        "-H",
+        "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "-H",
+        "Accept-Language: en-IN,en;q=0.9",
+        "-H",
+        'sec-ch-ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+        "-c",
+        str(CURL_COOKIE_FILE),
+        "-b",
+        str(CURL_COOKIE_FILE),
+        "-w",
+        "\n%{http_code} %{url_effective}",
+    ]
+    if referer:
+        cmd.extend(["-e", referer])
+    cmd.append(url)
+    completed = subprocess.run(cmd, capture_output=True, timeout=timeout + 20)
+    raw = completed.stdout or b""
+    split_at = raw.rfind(b"\n")
+    meta = raw[split_at + 1 :].decode("ascii", errors="replace") if split_at >= 0 else ""
+    body = raw[:split_at] if split_at >= 0 else raw
+    code_text, _, final = meta.partition(" ")
+    try:
+        code = int(code_text)
+    except ValueError as exc:
+        detail = (completed.stderr or b"").decode("utf-8", errors="replace")[:240]
+        raise URLError(detail or "curl returned no status") from exc
+    if completed.returncode != 0 and code < 400:
+        detail = (completed.stderr or b"").decode("utf-8", errors="replace")[:240]
+        raise URLError(detail or f"curl exit {completed.returncode}")
+    if code >= 400:
+        raise HTTPError(final or url, code, "curl", hdrs=None, fp=None)
+    return final or url, body, "text/html; charset=utf-8"
+
+
 def fetch(
     url: str,
     timeout: int = 45,
@@ -73,10 +144,18 @@ def fetch(
     for attempt in range(retries + 1):
         request = Request(url, headers=browser_headers(referer))
         try:
+            COOKIE_JAR.add_cookie_header(request)
+        except Exception:
+            pass
+        try:
             with urlopen(request, timeout=timeout, context=context) as response:
                 body = response.read()
                 final = response.geturl()
                 ctype = response.headers.get("Content-Type", "")
+                try:
+                    COOKIE_JAR.extract_cookies(response, request)
+                except Exception:
+                    pass
                 return final, body, ctype
         except HTTPError as exc:
             last = exc
@@ -85,7 +164,7 @@ def fetch(
             except Exception:
                 pass
             if not should_retry(exc, attempt, retries):
-                raise
+                return _give_up(exc, url, timeout, referer)
             time.sleep(1.5 * (attempt + 1))
         except (URLError, TimeoutError) as exc:
             last = exc

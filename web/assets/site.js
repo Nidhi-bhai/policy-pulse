@@ -32,7 +32,7 @@
       form.action = cfg.DIGEST_FORM_ACTION;
       form.method = "post";
       form.removeAttribute("enctype");
-      if (note) note.textContent = "This form posts to the digest endpoint in config.js.";
+      if (note) note.textContent = "This form posts your digest request.";
     } else if (!badMailto(mailto)) {
       form.action = mailto;
       if (note) note.textContent = "Submitting opens an email draft to request the free daily digest.";
@@ -42,48 +42,69 @@
     }
   }
 
+  var STORAGE_KEY = "policypulse-pro-order";
+  var OFFER = "a link to the unlisted weekly Pro brief page, updated every Monday; no renewal, no account";
+
+  function readReceipt() {
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return null;
+      var parsed = JSON.parse(raw);
+      if (!parsed || !parsed.orderId || !parsed.link) return null;
+      return parsed;
+    } catch (err) {
+      return null;
+    }
+  }
+
+  function showReceipt(record) {
+    var box = document.getElementById("pro-receipt");
+    if (!box || !record || !record.orderId || !record.link) return;
+    box.hidden = false;
+    box.innerHTML = "<p>Your unlisted weekly brief: <a href=\"" + escapeHtml(record.link) + "\">open the brief</a>. PayPal order id " + escapeHtml(record.orderId) + ". The page is updated every Monday. Bookmark the link.</p>";
+  }
+
+  function saveReceipt(orderId) {
+    var record = { orderId: String(orderId || ""), link: cfg.PRO_BRIEF_PATH || "" };
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(record));
+    } catch (err) {
+      /* The link still has to appear for this visit if storage is blocked. */
+    }
+    showReceipt(record);
+    var status = document.getElementById("paypal-status");
+    if (status) status.textContent = "PayPal captured the $9 payment. Bookmark the unlisted link above.";
+  }
+
+  showReceipt(readReceipt());
+
   var slot = document.getElementById("paypal-button");
   if (!slot) return;
-  if (!cfg.PAYPAL_CLIENT_ID || !cfg.PLAN_ID) {
-    slot.innerHTML = "<p class=\"note\">Add <code>PAYPAL_CLIENT_ID</code> and <code>PLAN_ID</code> in <code>config.js</code> to turn on the $9/month PayPal subscription button. No secret belongs in that file.</p>";
+  if (readReceipt()) return;
+  if (!cfg.PAYPAL_CLIENT_ID) {
+    slot.textContent = "Checkout is unavailable right now.";
     return;
   }
 
-  function revealBrief(subscriptionId) {
-    var status = document.getElementById("paypal-status");
-    var emailInput = document.getElementById("pro-email");
-    var email = emailInput ? String(emailInput.value || "").trim() : "";
-    var subscription = String(subscriptionId || "");
-    if (cfg.PRO_FORM_ACTION) {
-      try {
-        var body = new FormData();
-        body.append(cfg.PRO_FORM_EMAIL_FIELD || "email", email);
-        body.append(cfg.PRO_FORM_SUBSCRIPTION_FIELD || "subscription_id", subscription);
-        fetch(cfg.PRO_FORM_ACTION, { method: "POST", mode: "no-cors", body: body });
-      } catch (err) {
-        /* The bookmark still has to show if the optional form is unreachable. */
-      }
-    }
-    if (!status) return;
-    var path = cfg.PRO_BRIEF_PATH || "";
-    if (path && !/example\.com/i.test(path)) {
-      status.innerHTML = "PayPal accepted the subscription. Reference " + escapeHtml(subscription) + ". Bookmark <a href=\"" + escapeHtml(path) + "\">your private weekly brief</a>. A new edition is at that link every Monday.";
-    } else {
-      status.textContent = "PayPal accepted the subscription. Reference " + subscription + ". The private brief link is not in config.js yet.";
-    }
-  }
-
   var script = document.createElement("script");
-  script.src = "https://www.paypal.com/sdk/js?client-id=" + encodeURIComponent(cfg.PAYPAL_CLIENT_ID) + "&vault=true&intent=subscription";
+  script.src = "https://www.paypal.com/sdk/js?client-id=" + encodeURIComponent(cfg.PAYPAL_CLIENT_ID) + "&currency=USD&intent=capture";
   script.onload = function () {
     if (!window.paypal) return;
     window.paypal.Buttons({
-      style: { shape: "rect", label: "subscribe", color: "gold" },
-      createSubscription: function (data, actions) {
-        return actions.subscription.create({ plan_id: cfg.PLAN_ID });
+      style: { shape: "rect", label: "pay", color: "gold" },
+      createOrder: function (data, actions) {
+        return actions.order.create({
+          intent: "CAPTURE",
+          purchase_units: [{
+            description: "PolicyPulse Pro: " + OFFER,
+            amount: { currency_code: "USD", value: "9.00" }
+          }]
+        });
       },
-      onApprove: function (data) {
-        revealBrief(data.subscriptionID);
+      onApprove: function (data, actions) {
+        return actions.order.capture().then(function () {
+          saveReceipt(data.orderID);
+        });
       }
     }).render("#paypal-button");
   };

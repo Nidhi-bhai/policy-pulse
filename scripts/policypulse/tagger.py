@@ -23,18 +23,46 @@ SECTORS: list[tuple[str, str]] = [
 
 SECTOR_LABEL = dict(SECTORS)
 
-# "Shubhang Exports Ltd" is a company in a SEBI order, not the exports sector.
-# Strip that phrase before the exports patterns run. "export policy" and
-# "merchandise exports" do not have a company suffix, so they still match.
-_EXPORT_COMPANY = re.compile(
-    r"\bexports?\s+(?:pvt\.?|private|ltd\.?|limited|llp|inc\.?|corp\.?|corporation|co\.?)\b",
+# Legal suffixes on a company or party name. Keywords inside that name
+# ("Add Life Pharma Ltd", "Shubhang Exports Ltd") are not sector evidence.
+_SUFFIX_RE = re.compile(
+    r"\b(?:(?:pvt\.?|private)\s+)?(?:ltd\.?|limited|llp|inc\.?|incorporated|corp\.?|corporation|plc|company|co\.)\b",
     flags=re.I,
 )
+_STOPWORDS = {
+    "a",
+    "an",
+    "and",
+    "are",
+    "as",
+    "at",
+    "be",
+    "by",
+    "for",
+    "from",
+    "in",
+    "into",
+    "is",
+    "of",
+    "on",
+    "or",
+    "per",
+    "that",
+    "the",
+    "their",
+    "this",
+    "to",
+    "under",
+    "via",
+    "was",
+    "were",
+    "with",
+}
 
 # Patterns are matched against the official title plus a short excerpt.
 _SECTOR_PATTERNS: dict[str, list[str]] = {
     "exports": [
-        r"\bexports?\b",
+        r"\bexport(?:er)?s?\b",
         r"\bimporters?\b",
         r"\bimports?\b",
         r"\bdgft\b",
@@ -181,29 +209,81 @@ _IMPACT_RULES: list[tuple[str, str]] = [
 ]
 
 
+def _token_before(text: str, index: int) -> tuple[int, str] | None:
+    """Return (start, token) for the word that ends just before index."""
+    j = index
+    while j > 0 and text[j - 1].isspace():
+        j -= 1
+    if j == 0 or text[j - 1] in ",;:()[]{}":
+        return None
+    k = j
+    while k > 0 and not text[k - 1].isspace() and text[k - 1] not in ",;:()[]{}":
+        k -= 1
+    token = text[k:j]
+    if not re.match(r"[A-Za-z]", token):
+        return None
+    return k, token
+
+
+def without_party_names(text: str) -> str:
+    """Blank company and party names so a suffix like Ltd does not tag a sector."""
+    if not text:
+        return ""
+    spans: list[tuple[int, int]] = []
+    for match in _SUFFIX_RE.finditer(text):
+        start = match.start()
+        taken = 0
+        cursor = start
+        while taken < 8:
+            earlier = _token_before(text, cursor)
+            if earlier is None:
+                break
+            token_start, token = earlier
+            if token.lower().strip(".") in _STOPWORDS:
+                break
+            start = token_start
+            taken += 1
+            cursor = token_start
+        if taken:
+            spans.append((start, match.end()))
+    if not spans:
+        return text
+    spans.sort()
+    merged: list[tuple[int, int]] = []
+    for start, end in spans:
+        if merged and start <= merged[-1][1]:
+            merged[-1] = (merged[-1][0], max(merged[-1][1], end))
+        else:
+            merged.append((start, end))
+    parts: list[str] = []
+    cursor = 0
+    for start, end in merged:
+        parts.append(text[cursor:start])
+        parts.append(" ")
+        cursor = end
+    parts.append(text[cursor:])
+    return "".join(parts)
+
+
 def tag_sectors(text: str) -> list[str]:
     found: list[str] = []
-    haystack = text or ""
-    exports_haystack = _EXPORT_COMPANY.sub(" ", haystack)
+    haystack = without_party_names(text or "")
     for slug, _label in SECTORS:
-        probe = exports_haystack if slug == "exports" else haystack
         for pattern in _SECTOR_PATTERNS[slug]:
-            if re.search(pattern, probe, flags=re.I):
+            if re.search(pattern, haystack, flags=re.I):
                 found.append(slug)
                 break
     return found
 
 
-def _impact_sentences(text: str) -> list[str]:
+def stated_impact(text: str) -> str:
+    """Impact sentences only when the notice text, outside a party name, states the trigger."""
+    cleaned = without_party_names(text or "")
     lines: list[str] = []
     for pattern, sentence in _IMPACT_RULES:
-        if re.search(pattern, text, flags=re.I):
+        if re.search(pattern, cleaned, flags=re.I):
             lines.append(sentence)
-    if not lines:
-        lines.append(
-            "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment."
-        )
-    return lines
+    return " ".join(lines)
 
 
 def annotate(item: dict) -> dict:
@@ -217,6 +297,7 @@ def annotate(item: dict) -> dict:
         source_excerpt = excerpt(source_excerpt, 280)
     basis_text = collapse(f"{title} {source_excerpt}")
     sectors = tag_sectors(basis_text)
+    impact = stated_impact(basis_text)
 
     instrument = collapse(item.get("instrument") or "")
     body = collapse(item.get("body_name") or "")
@@ -247,8 +328,6 @@ def annotate(item: dict) -> dict:
             "so the item stays on the latest feed and is not filed on a sector page."
         )
 
-    impact_lines = _impact_sentences(basis_text)
-    impact = " ".join(impact_lines)
     action = (
         "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. "
         "This brief is a reading aid, not legal, tax, or investment advice."
@@ -259,6 +338,7 @@ def annotate(item: dict) -> dict:
     item["what_changed"] = what
     item["who_affected"] = who
     item["impact"] = impact
+    item["impact_from_notice"] = bool(impact)
     item["action"] = action
     item["basis"] = "keyword-rules"
     item["excerpt"] = source_excerpt

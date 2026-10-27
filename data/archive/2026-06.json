@@ -24,7 +24,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "c3aa206d70770c53",
@@ -48,7 +49,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "5fb5e951e7f60a3c",
@@ -66,11 +68,12 @@
       "sectors": [],
       "what_changed": "Listed by the source as CBIC GST portal notice, CBIC. Official headline: “Kind Attention : Advisory No. 11/2026 dated 24.06.2026 on 2 Factor Authentication for Central Excise, SBS & HSNS Taxpayers is available under ACES(CE&ST)>Advisories for ACES(CE &...”. Source text includes: “Kind Attention : Advisory No. 11/2026 dated 24.06.2026 on 2 Factor Authentication for Central Excise, SBS & HSNS Taxpayers is available under ACES(CE&ST)>Advisories for ACES(CE & ST) and HSNS>HSNS CESS Legislation”.”.",
       "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:46:07+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "098e74347d114e60",
@@ -88,11 +91,12 @@
       "sectors": [],
       "what_changed": "Listed by the source as CBIC GST portal notice, CBIC. Official headline: “Kind attention to the Chewing tobacco, Jarda and Gutkha Manufacturers: Advisory No. 10/2026 dated 09.06.2026 on CE INT 01/CE INT 02 (Filing Procedure for Sealing/De-Sealing...”. Source text includes: “Kind attention to the Chewing tobacco, Jarda and Gutkha Manufacturers: Advisory No. 10/2026 dated 09.06.2026 on CE INT 01/CE INT 02 (Filing Procedure for Sealing/De-Sealing request) is available under “ACES(CE&ST)>Advisories for ACES(CE & ST)”.”.",
       "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:46:07+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "c064dce909e2dc09",
@@ -110,11 +114,12 @@
       "sectors": [],
       "what_changed": "Listed by the source as CBIC GST portal notice, CBIC. Official headline: “KIND ATTENTION : CENTRAL EXCISE TAXPAYERS: New Functionality for e-Filing of Request for Sealing (Intimation CE INT-01) & De-Sealing (Intimation CE INT-02) is enabled from...”. Source text includes: “KIND ATTENTION : CENTRAL EXCISE TAXPAYERS: New Functionality for e-Filing of Request for Sealing (Intimation CE INT-01) & De-Sealing (Intimation CE INT-02) is enabled from 07.06.2026. Please refer to the Advisory being issued shortly”.",
       "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:46:07+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "c37b6bd1ec8216e6",
@@ -132,11 +137,12 @@
       "sectors": [],
       "what_changed": "Listed by the source as CBIC GST portal notice, CBIC. Official headline: “Kind Attention HSNS Taxpayers : Advisory No. 09/2026 dated 05.06.2026 on HSNS INT 01/INT 02 (Filing Procedure for Sealing/De-Sealing request) for HSNS Cess Registered Persons is...”. Source text includes: “Kind Attention HSNS Taxpayers : Advisory No. 09/2026 dated 05.06.2026 on HSNS INT 01/INT 02 (Filing Procedure for Sealing/De-Sealing request) for HSNS Cess Registered Persons is available under HSNS>HSNS CESS Legislation”.”.",
       "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:46:07+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "fd667c1f47052e9d",
@@ -154,11 +160,12 @@
       "sectors": [],
       "what_changed": "Listed by the source as DGFT public notice 17 (2026-27), DGFT. Official headline: “Enlistment under Appendix 2E of FTP, 2023-Agency Authorised to issue Certificate of Origin (Non-Preferential)-regarding.”.",
       "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "44356d020b4b25ae",
@@ -178,11 +185,12 @@
       ],
       "what_changed": "Listed by the source as DGFT trade notice 07/2026-27 (2026-27), DGFT. Official headline: “Request for comments on alignment of Schedule-II (Export Policy) of ITC (HS), 2022 consequent to amendments introduced under the Finance Act, 2026 – regarding.”.",
       "who_affected": "Sector tags come only from words in that text: Exports & trade. A tag means the word appeared. It does not mean every firm in that sector is covered.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "1a740861d5b10b8b",
@@ -200,11 +208,12 @@
       "sectors": [],
       "what_changed": "Listed by the source as DGFT notification 18/2026-27 (2026), DGFT. Official headline: “Nomination of Non-official Members of the Board of Trade- reg.”.",
       "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "0f185b9e88831043",
@@ -228,7 +237,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "432b325e82775399",
@@ -252,7 +262,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "1b28ada85612dc3e",
@@ -270,11 +281,12 @@
       "sectors": [],
       "what_changed": "Listed by the source as DGFT public notice 16/2026-27 (2026-27), DGFT. Official headline: “Amendments in Para 2.88 of Handbook of Procedures- reg.”.",
       "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     },
     {
       "id": "a0cbe67736b64a1e",
@@ -298,7 +310,8 @@
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": true
     },
     {
       "id": "bffd2625dc880d16",
@@ -316,11 +329,12 @@
       "sectors": [],
       "what_changed": "Listed by the source as DGFT public notice 14/2026-27 (2026-27), DGFT. Official headline: “Fixation of Six New Standard Input Output Norms (SIONs) at SION No. A-3702, A-3703, A-3704, A-3705, A-3706 & A-3707 under \"Chemical and Allied Product\" (Product Code-'A')”.",
       "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
-      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
       "fetched_at": "2026-10-27T13:42:57+05:30",
-      "first_seen": "2026-10-27T13:42:07+05:30"
+      "first_seen": "2026-10-27T13:42:07+05:30",
+      "impact_from_notice": false
     }
   ]
 }
