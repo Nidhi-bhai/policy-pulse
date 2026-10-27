@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T13:42:57+05:30",
+  "generated_at": "2026-10-27T13:46:07+05:30",
   "item_count": 649,
   "source_families": [
     "cbic",
@@ -11,7 +11,6 @@
   ],
   "sources_ok": [
     "cbic",
-    "dgft",
     "egazette",
     "pib",
     "rbi",
@@ -55,9 +54,9 @@
       "id": "dgft",
       "name": "DGFT",
       "url": "https://www.dgft.gov.in/CP/?opt=trade-notice",
-      "ok": true,
-      "fetched": 512,
-      "error": null
+      "ok": false,
+      "fetched": 0,
+      "error": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "id": "egazette",
