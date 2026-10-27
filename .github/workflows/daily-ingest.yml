@@ -1,0 +1,67 @@
+name: Daily policy ingest
+
+on:
+  schedule:
+    # 02:20 UTC is 07:50 in India.
+    - cron: "20 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: policypulse-daily
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pull official feeds
+        env:
+          POLICYPULSE_LLM_API_KEY: ${{ secrets.POLICYPULSE_LLM_API_KEY }}
+          POLICYPULSE_LLM_BASE_URL: ${{ secrets.POLICYPULSE_LLM_BASE_URL }}
+          POLICYPULSE_LLM_MODEL: ${{ secrets.POLICYPULSE_LLM_MODEL }}
+          POLICYPULSE_LLM_MAX: ${{ secrets.POLICYPULSE_LLM_MAX }}
+        run: python scripts/ingest.py
+
+      - name: Build static site
+        run: python scripts/build_site.py
+
+      - name: Commit the growing archive
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data docs
+          if git diff --staged --quiet; then
+            echo "No archive changes."
+          else
+            git commit -m "Update PolicyPulse archive"
+            git push
+          fi
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: ingest
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
