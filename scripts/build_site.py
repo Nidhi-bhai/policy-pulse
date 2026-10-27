@@ -5,10 +5,12 @@ from __future__ import annotations
 
 import html
 import json
+import os
+import re
 import shutil
 import sys
+from datetime import date, datetime, timedelta
 from email.utils import format_datetime
-from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -16,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from policypulse.tagger import SECTORS, SECTOR_LABEL  # noqa: E402
-from policypulse.text import format_display_date  # noqa: E402
+from policypulse.text import format_display_date, today_ist  # noqa: E402
 
 SITE = "https://nidhi-bhai.github.io/policy-pulse"
 DOCS = ROOT / "docs"
@@ -24,6 +26,11 @@ WEB = ROOT / "web"
 DATA = ROOT / "data" / "items.json"
 MANIFEST = ROOT / "data" / "manifest.json"
 IST = ZoneInfo("Asia/Kolkata")
+# Notices dated before the week the site launched are the historical backfill.
+BACKFILL_BEFORE = "2026-10-20"
+DISCLAIMER = "PolicyPulse is not a government site. Verify every notice on the official source."
+DIGEST_MAILTO = "mailto:nidhi69n@gmail.com?subject=PolicyPulse%20digest"
+SLUG_FILE = WEB / "pro-slug.txt"
 
 NAV = [
     ("index.html", "Latest"),
@@ -60,6 +67,11 @@ def rel(depth: int, path: str) -> str:
     return prefix(depth) + path
 
 
+def is_backfill(item: dict) -> bool:
+    dated = item.get("date") or ""
+    return bool(dated) and dated < BACKFILL_BEFORE
+
+
 def chips(item: dict, depth: int) -> str:
     parts = []
     for slug in item.get("sectors") or []:
@@ -67,6 +79,8 @@ def chips(item: dict, depth: int) -> str:
         parts.append(
             f'<a class="chip {esc(slug)}" href="{esc(rel(depth, f"sector/{slug}.html"))}">{esc(label)}</a>'
         )
+    if is_backfill(item):
+        parts.append('<span class="chip backfill">Backfill</span>')
     return "".join(parts)
 
 
@@ -86,13 +100,22 @@ def card(item: dict, depth: int) -> str:
 </article>"""
 
 
-def shell(title: str, description: str, depth: int, current: str, body: str, canonical_path: str) -> str:
+def shell(
+    title: str,
+    description: str,
+    depth: int,
+    current: str,
+    body: str,
+    canonical_path: str,
+    robots: str | None = None,
+) -> str:
     pre = prefix(depth)
     nav = []
     for path, label in NAV:
         current_attr = ' aria-current="page"' if path == current else ""
         nav.append(f'<a href="{esc(rel(depth, path))}"{current_attr}>{esc(label)}</a>')
     canonical = SITE + canonical_path
+    robots_tag = f'  <meta name="robots" content="{esc(robots)}">\n' if robots else ""
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -100,7 +123,7 @@ def shell(title: str, description: str, depth: int, current: str, body: str, can
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(description)}">
-  <link rel="canonical" href="{esc(canonical)}">
+{robots_tag}  <link rel="canonical" href="{esc(canonical)}">
   <meta property="og:title" content="{esc(title)}">
   <meta property="og:description" content="{esc(description)}">
   <meta property="og:url" content="{esc(canonical)}">
@@ -163,7 +186,9 @@ def page_home(items: list[dict], manifest: dict) -> str:
   <div>
     <p class="eyebrow">Latest feed · {esc(format_display_date(updated) if updated else "archive")}</p>
     <h1>What changed, who it touches, and what to read next.</h1>
-    <p class="lede">PolicyPulse turns public Indian government notices into a short business brief for MSMEs, traders, exporters, and investors. Every card links the official source. The wording is taken from that source, not from a guess.</p>
+    <p class="lede">PolicyPulse turns public Indian government notices into a short business brief for MSMEs, traders, exporters, and investors. Every card links the official source. The wording is taken from that source, not from a guess. The public feed updates daily. Pro is a weekly brief.</p>
+    <p>The archive includes a 2023–26 backfill. Notices are labeled with the date on the official document, not the day they were added.</p>
+    <p class="disclaimer">{DISCLAIMER}</p>
   </div>
   <dl class="stats">
     <div><dt>Items in the archive</dt><dd>{len(items)}</dd></div>
@@ -222,6 +247,8 @@ def page_item(item: dict) -> str:
         date_note = "<p class=\"note\">The source page did not give a publication date. The date shown is a date found inside the notice text, or the day PolicyPulse stored it.</p>"
     elif item.get("date_precision") == "missing":
         date_note = "<p class=\"note\">This feed did not include a publication date.</p>"
+    elif is_backfill(item):
+        date_note = "<p class=\"note\">Backfill. This date is the date on the official document, not the day PolicyPulse added the notice. The archive includes a 2023–26 backfill.</p>"
     alt = ""
     if item.get("title_alt"):
         alt = f"<p class=\"note\">Same release, other language on the official feed: {esc(item['title_alt'])}</p>"
@@ -304,7 +331,7 @@ def page_archive(items: list[dict]) -> str:
 <header class="page-head">
   <p class="eyebrow">History</p>
   <h1>The archive is the record.</h1>
-  <p class="lede">{len(items)} notices kept with their source URL and date. Daily runs add items. They do not delete old ones. Month files live in the repository under <code>data/archive/</code>.</p>
+  <p class="lede">{len(items)} notices kept with their source URL and date. The public feed updates daily. Daily runs add items and keep old ones. The archive includes a 2023–26 backfill, and each notice is labeled with the date on the official document. Month files live in the repository under <code>data/archive/</code>.</p>
 </header>
 {"".join(blocks)}
 """
@@ -385,12 +412,12 @@ def page_digest() -> str:
 <header class="page-head">
   <p class="eyebrow">Free</p>
   <h1>Daily digest signup.</h1>
-  <p class="lede">A static site cannot send mail on its own. Use this form as a mailto placeholder, or set <code>DIGEST_FORM_ACTION</code> in <code>config.js</code> to a Google Form or other static form endpoint.</p>
+  <p class="lede">The public feed updates daily. This form opens an email draft so you can ask for that digest. Set <code>DIGEST_FORM_ACTION</code> in <code>config.js</code> when you want the form to post to a Google Form instead.</p>
 </header>
-<form id="digest-form" class="panel" method="post" action="mailto:you@example.com" enctype="text/plain">
-  <p id="digest-mode" class="note">Placeholder mode: submitting opens a mail draft to the address in config.js. Replace <code>DIGEST_MAILTO</code> before you share the page.</p>
+<p id="digest-mode" class="note">Submitting opens an email draft to request the free daily digest.</p>
+<form id="digest-form" class="panel" method="post" action="{esc(DIGEST_MAILTO)}" enctype="text/plain">
   <label for="email">Email</label>
-  <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@company.com">
+  <input id="email" name="email" type="email" required autocomplete="email" placeholder="name@company.in">
   <label for="sector">Sector you care about</label>
   <select id="sector" name="sector">{options}</select>
   <p><button class="button solid" type="submit">Request the free daily digest</button></p>
@@ -407,16 +434,20 @@ def page_digest() -> str:
 
 
 def page_pro() -> str:
-    body = """
+    body = f"""
 <header class="page-head">
   <p class="eyebrow">Pro · $9/month</p>
   <h1>Weekly sector brief.</h1>
-  <p class="lede">Pro is a PayPal subscription for a weekly sector brief. The button reads <code>PAYPAL_CLIENT_ID</code> and <code>PLAN_ID</code> from <code>config.js</code>. Card numbers never touch this repository.</p>
+  <p class="lede">The public feed updates daily. Pro is a weekly brief every Monday, at your private link. PayPal shows that link after you subscribe. Bookmark it. Card numbers never touch this repository.</p>
+  <p class="disclaimer">{DISCLAIMER}</p>
 </header>
 <section class="panel">
   <h2>What you are paying for</h2>
-  <p>A weekly pass across the seven sector pages: exports, agriculture, MSME, banking, GST, pharma, and startups. The underlying notices stay free on this site. The subscription is how the brief is funded.</p>
-  <p>Create a $9/month plan in PayPal, then paste the client id and plan id into <code>config.js</code>. Until those values are set, checkout stays off on purpose.</p>
+  <p>Delivery is a weekly brief every Monday, at your private link. Each edition is a per-sector digest of that week's notices, with the impact note and the official source. The underlying notices stay free on this site.</p>
+  <p>The private page is unlisted. A new edition starts every Monday and is refreshed when the daily archive run picks up notices dated in that week.</p>
+  <label for="pro-email">Email (optional)</label>
+  <input id="pro-email" name="email" type="email" autocomplete="email" placeholder="name@company.in">
+  <p class="note">Checkout works with this field left blank. If a form URL is set in <code>config.js</code>, PolicyPulse sends the subscription id and this email to that form after PayPal approves. With no form URL, the email is not sent anywhere.</p>
   <div id="paypal-button"></div>
   <p id="paypal-status" class="note"></p>
 </section>
@@ -469,6 +500,209 @@ def _rss_date(iso_date: str) -> str:
     return format_datetime(parsed)
 
 
+_SLUG_RE = re.compile(r"[A-Za-z0-9_-]{16,}")
+
+
+def load_pro_slug() -> str:
+    """Committed random constant, unless POLICYPULSE_PRO_SLUG is set for this run."""
+    env = os.environ.get("POLICYPULSE_PRO_SLUG", "").strip()
+    raw = env or SLUG_FILE.read_text(encoding="utf-8").strip()
+    if not _SLUG_RE.fullmatch(raw):
+        raise SystemExit(
+            "Pro slug must match [A-Za-z0-9_-]{16,} (POLICYPULSE_PRO_SLUG or web/pro-slug.txt)"
+        )
+    return raw
+
+
+def iso_week_key(iso_date: str) -> str | None:
+    try:
+        parsed = datetime.strptime((iso_date or "")[:10], "%Y-%m-%d").date()
+    except ValueError:
+        return None
+    year, week, _weekday = parsed.isocalendar()
+    return f"{year}-W{week:02d}"
+
+
+def week_bounds(week_key: str) -> tuple[date, date]:
+    year_text, week_text = week_key.split("-W", 1)
+    monday = date.fromisocalendar(int(year_text), int(week_text), 1)
+    return monday, monday + timedelta(days=6)
+
+
+def current_iso_week(today: str | None = None) -> str:
+    key = iso_week_key(today or today_ist())
+    if not key:
+        raise SystemExit("could not resolve the current ISO week")
+    return key
+
+
+def group_by_iso_week(items: list[dict]) -> dict[str, list[dict]]:
+    """Dated notices only. Undated rows are omitted so they are not given a fake week."""
+    groups: dict[str, list[dict]] = {}
+    for item in items:
+        dated = item.get("date") or ""
+        if len(dated) < 10:
+            continue
+        key = iso_week_key(dated)
+        if not key:
+            continue
+        groups.setdefault(key, []).append(item)
+    for rows in groups.values():
+        rows.sort(key=lambda row: row.get("date") or "", reverse=True)
+    return groups
+
+
+def robots_txt(pro_slug: str) -> str:
+    return (
+        "User-agent: *\n"
+        "Allow: /\n"
+        f"Disallow: /policy-pulse/pro/{pro_slug}/\n"
+        f"Disallow: /pro/{pro_slug}/\n"
+        "Sitemap: " + SITE + "/sitemap.xml\n"
+    )
+
+
+def _config_string(text: str, key: str, default: str = "") -> str:
+    match = re.search(rf"{re.escape(key)}\s*:\s*(\"(?:\\.|[^\"\\])*\"|'[^']*')", text)
+    if not match:
+        return default
+    literal = match.group(1)
+    if literal.startswith('"'):
+        return json.loads(literal)
+    return literal[1:-1]
+
+
+def render_config(existing: str, pro_slug: str) -> str:
+    """Rewrite public config. Keeps the live PayPal ids and any configured form URL."""
+    paypal = _config_string(existing, "PAYPAL_CLIENT_ID")
+    plan = _config_string(existing, "PLAN_ID")
+    digest_action = _config_string(existing, "DIGEST_FORM_ACTION")
+    pro_action = _config_string(existing, "PRO_FORM_ACTION")
+    email_field = _config_string(existing, "PRO_FORM_EMAIL_FIELD", "email") or "email"
+    sub_field = _config_string(existing, "PRO_FORM_SUBSCRIPTION_FIELD", "subscription_id") or "subscription_id"
+    lines = [
+        "// Public site config. Do not put secrets in this file.",
+        "// PayPal subscription buttons read PAYPAL_CLIENT_ID and PLAN_ID at runtime.",
+        "// The client id is public. The PayPal secret never goes here.",
+        "window.POLICY_PULSE_CONFIG = {",
+        f"  PAYPAL_CLIENT_ID: {json.dumps(paypal)},",
+        f"  PLAN_ID: {json.dumps(plan)},",
+        "  // Optional. When set, the daily digest form posts here instead of opening mail.",
+        f"  DIGEST_FORM_ACTION: {json.dumps(digest_action)},",
+        f"  DIGEST_MAILTO: {json.dumps(DIGEST_MAILTO)},",
+        "  // Unlisted weekly brief. Revealed after PayPal approves. Kept out of the sitemap.",
+        f"  PRO_BRIEF_PATH: {json.dumps('pro/' + pro_slug + '/')},",
+        "  // Optional Google Form action. Empty skips the subscription email post.",
+        f"  PRO_FORM_ACTION: {json.dumps(pro_action)},",
+        f"  PRO_FORM_EMAIL_FIELD: {json.dumps(email_field)},",
+        f"  PRO_FORM_SUBSCRIPTION_FIELD: {json.dumps(sub_field)}",
+        "};",
+        "",
+    ]
+    return "\n".join(lines)
+
+
+def page_brief(
+    rows: list[dict],
+    week_key: str,
+    monday: date,
+    sunday: date,
+    pro_slug: str,
+    current: bool,
+    earlier: list[str] | None = None,
+) -> str:
+    depth = 2
+    sections = []
+    buckets: list[tuple[str, str]] = list(SECTORS)
+    buckets.append(("", "Not matched to a sector keyword"))
+    for slug, label in buckets:
+        if slug:
+            chosen = [item for item in rows if slug in (item.get("sectors") or [])]
+        else:
+            chosen = [item for item in rows if not (item.get("sectors") or [])]
+        if not chosen:
+            continue
+        blocks = []
+        for item in chosen:
+            item_href = rel(depth, f"items/{item['id']}.html")
+            blocks.append(
+                "<article class=\"brief-item\">"
+                f"<p class=\"meta\"><time datetime=\"{esc(item.get('date') or '')}\">{esc(format_display_date(item.get('date')))}</time> "
+                f"<span class=\"src\">{esc(item.get('source_name'))}</span></p>"
+                f"<h3><a href=\"{esc(item_href)}\">{esc(item.get('title'))}</a></h3>"
+                f"<p>{esc(item.get('impact') or '')}</p>"
+                f"<p class=\"action\"><a href=\"{esc(item_href)}\">Brief on PolicyPulse</a> · "
+                f"<a href=\"{esc(item.get('url'))}\">Official source</a></p>"
+                "</article>"
+            )
+        sections.append(
+            f"<section class=\"brief-sector\"><h2>{esc(label)}</h2>{''.join(blocks)}</section>"
+        )
+    if current and earlier:
+        links = "".join(
+            f'<li><a href="{esc(key)}.html">{esc(key)}</a></li>' for key in sorted(earlier, reverse=True)[:16]
+        )
+        sections.append(f"<section class=\"brief-sector\"><h2>Earlier editions</h2><ul class=\"list\">{links}</ul></section>")
+    if sections:
+        body_sections = "".join(sections)
+    else:
+        body_sections = (
+            "<p class=\"note\">No dated notice in the archive falls in this Monday–Sunday week yet. "
+            "The daily run fills this page when a source publishes a date in the week.</p>"
+        )
+    span = f"{monday.strftime('%d %b %Y')}–{sunday.strftime('%d %b %Y')}"
+    if current:
+        edition = (
+            f"This is the current week, {span}. "
+            "A new edition starts every Monday and is refreshed by the daily archive run. Bookmark this page. "
+            "Delivery is a weekly brief every Monday, at your private link."
+        )
+    else:
+        edition = (
+            f"Edition for the week of {span}. "
+            "Delivery is a weekly brief every Monday, at your private link."
+        )
+    body = f"""
+<header class="page-head">
+  <p class="eyebrow">Pro brief · {esc(week_key)}</p>
+  <h1>Weekly brief</h1>
+  <p class="lede">{esc(edition)}</p>
+  <p class="disclaimer">{DISCLAIMER}</p>
+</header>
+{body_sections}
+"""
+    canonical = f"/pro/{pro_slug}/" if current else f"/pro/{pro_slug}/{week_key}.html"
+    return shell(
+        f"Weekly brief {week_key} — PolicyPulse Pro",
+        "Unlisted PolicyPulse Pro weekly brief. Notices stay linked to the official source.",
+        depth,
+        "",
+        body,
+        canonical,
+        robots="noindex, nofollow",
+    )
+
+
+def write_private_briefs(items: list[dict], pro_slug: str) -> str:
+    groups = group_by_iso_week(items)
+    current = current_iso_week()
+    brief_dir = DOCS / "pro" / pro_slug
+    brief_dir.mkdir(parents=True, exist_ok=True)
+    monday, sunday = week_bounds(current)
+    earlier = sorted(key for key in groups if key < current)
+    (brief_dir / "index.html").write_text(
+        page_brief(groups.get(current, []), current, monday, sunday, pro_slug, True, earlier),
+        encoding="utf-8",
+    )
+    for key in earlier:
+        start, end = week_bounds(key)
+        (brief_dir / f"{key}.html").write_text(
+            page_brief(groups[key], key, start, end, pro_slug, False),
+            encoding="utf-8",
+        )
+    return current
+
+
 def write_sitemap(paths: list[str]) -> str:
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
@@ -503,13 +737,25 @@ def main() -> int:
     favicon = WEB / "assets" / "favicon.svg"
     if favicon.exists():
         shutil.copy(favicon, DOCS / "assets" / "favicon.svg")
-    if not (DOCS / "config.js").exists():
-        shutil.copy(WEB / "config.js", DOCS / "config.js")
+    config_path = DOCS / "config.js"
+    if config_path.exists():
+        existing_config = config_path.read_text(encoding="utf-8")
+    elif (WEB / "config.js").exists():
+        existing_config = (WEB / "config.js").read_text(encoding="utf-8")
+    else:
+        existing_config = ""
+    pro_slug = load_pro_slug()
+    config_text = render_config(existing_config, pro_slug)
+    existing_paypal = _config_string(existing_config, "PAYPAL_CLIENT_ID")
+    existing_plan = _config_string(existing_config, "PLAN_ID")
+    if existing_paypal and _config_string(config_text, "PAYPAL_CLIENT_ID") != existing_paypal:
+        raise SystemExit("refusing to rewrite config.js without the existing PayPal client id")
+    if existing_plan and _config_string(config_text, "PLAN_ID") != existing_plan:
+        raise SystemExit("refusing to rewrite config.js without the existing PayPal plan id")
+    config_path.write_text(config_text, encoding="utf-8")
+    (WEB / "config.js").write_text(config_text, encoding="utf-8")
     (DOCS / ".nojekyll").write_text("", encoding="utf-8")
-    (DOCS / "robots.txt").write_text(
-        "User-agent: *\nAllow: /\nSitemap: " + SITE + "/sitemap.xml\n",
-        encoding="utf-8",
-    )
+    (DOCS / "robots.txt").write_text(robots_txt(pro_slug), encoding="utf-8")
     (DOCS / "index.html").write_text(page_home(items, manifest), encoding="utf-8")
     (DOCS / "about.html").write_text(page_about(), encoding="utf-8")
     (DOCS / "sources.html").write_text(page_sources(manifest), encoding="utf-8")
@@ -532,8 +778,13 @@ def main() -> int:
         (DOCS / "items" / f"{item['id']}.html").write_text(page_item(item), encoding="utf-8")
         paths.append(f"items/{item['id']}.html")
     (DOCS / "feed.xml").write_text(write_rss(items), encoding="utf-8")
-    (DOCS / "sitemap.xml").write_text(write_sitemap(paths), encoding="utf-8")
+    sitemap = write_sitemap(paths)
+    if pro_slug in sitemap:
+        raise SystemExit("refusing to publish the private brief path in sitemap.xml")
+    (DOCS / "sitemap.xml").write_text(sitemap, encoding="utf-8")
+    current_week = write_private_briefs(items, pro_slug)
     print(f"built {len(items)} item pages in {DOCS}")
+    print(f"private brief week {current_week}")
     return 0
 
 

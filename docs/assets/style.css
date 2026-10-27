@@ -178,6 +178,18 @@ h1 { font-size: clamp(2.2rem, 4vw, 3.5rem); margin: 0 0 0.8rem; }
 .chip.gst { background: #f6dbe3; }
 .chip.pharma { background: #d7eef1; }
 .chip.startups { background: #e6def4; }
+.chip.backfill { background: #efe6c9; }
+.disclaimer {
+  margin: 1rem 0 0;
+  padding: 0.75rem 0.9rem;
+  border-left: 4px solid var(--clay);
+  background: #fff4e8;
+  border-radius: 0.5rem;
+  max-width: 44rem;
+}
+.brief-sector { margin-top: 1.6rem; }
+.brief-item { padding: 0.75rem 0; border-bottom: 1px solid var(--line); }
+.brief-item h3 { margin: 0.2rem 0; font-size: 1.15rem; }
 .action { margin: 0.7rem 0 0; color: var(--muted); font-size: 0.95rem; }
 
 .page-head { padding: 2rem 0 0.5rem; }

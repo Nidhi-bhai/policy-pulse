@@ -23,6 +23,14 @@ SECTORS: list[tuple[str, str]] = [
 
 SECTOR_LABEL = dict(SECTORS)
 
+# "Shubhang Exports Ltd" is a company in a SEBI order, not the exports sector.
+# Strip that phrase before the exports patterns run. "export policy" and
+# "merchandise exports" do not have a company suffix, so they still match.
+_EXPORT_COMPANY = re.compile(
+    r"\bexports?\s+(?:pvt\.?|private|ltd\.?|limited|llp|inc\.?|corp\.?|corporation|co\.?)\b",
+    flags=re.I,
+)
+
 # Patterns are matched against the official title plus a short excerpt.
 _SECTOR_PATTERNS: dict[str, list[str]] = {
     "exports": [
@@ -176,9 +184,11 @@ _IMPACT_RULES: list[tuple[str, str]] = [
 def tag_sectors(text: str) -> list[str]:
     found: list[str] = []
     haystack = text or ""
+    exports_haystack = _EXPORT_COMPANY.sub(" ", haystack)
     for slug, _label in SECTORS:
+        probe = exports_haystack if slug == "exports" else haystack
         for pattern in _SECTOR_PATTERNS[slug]:
-            if re.search(pattern, haystack, flags=re.I):
+            if re.search(pattern, probe, flags=re.I):
                 found.append(slug)
                 break
     return found

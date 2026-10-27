@@ -4,15 +4,28 @@ from __future__ import annotations
 
 import sys
 import unittest
+from datetime import date
 from pathlib import Path
+from unittest.mock import patch
+from urllib.error import HTTPError, URLError
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from policypulse.archive import merge_all  # noqa: E402
-from policypulse.sources import _RowParser, _pib_links, _sebi_circular_rows  # noqa: E402
+from policypulse.http import fetch, should_retry  # noqa: E402
+from policypulse.sources import (  # noqa: E402
+    _RowParser,
+    _pib_links,
+    _sebi_circular_rows,
+    dgft_candidate_urls,
+    dgft_listing_ok,
+)
 from policypulse.tagger import annotate  # noqa: E402
 from policypulse.text import parse_date, stable_id  # noqa: E402
+
+import build_site  # noqa: E402
+import ingest  # noqa: E402
 
 
 class DateTests(unittest.TestCase):
@@ -52,6 +65,27 @@ class TaggerTests(unittest.TestCase):
         item = annotate({"title": "Floral tributes on a birth anniversary", "excerpt": ""})
         self.assertEqual(item["sectors"], [])
         self.assertIn("not filed", item["who_affected"])
+
+    def test_company_named_exports_ltd_is_not_the_exports_sector(self):
+        item = annotate(
+            {
+                "title": (
+                    "Completion of Recovery Certificate No. 6665 of 2023 issued to "
+                    "Shubhang Exports Ltd. [Defaulter] in the matter of Sulabh Engineers"
+                ),
+                "excerpt": "",
+            }
+        )
+        self.assertNotIn("exports", item["sectors"])
+
+    def test_export_policy_still_counts_beside_a_company_name(self):
+        item = annotate(
+            {
+                "title": "Shubhang Exports Ltd and the amendment of the export policy of raw sugar",
+                "excerpt": "",
+            }
+        )
+        self.assertIn("exports", item["sectors"])
 
 
 class ArchiveTests(unittest.TestCase):
@@ -130,6 +164,165 @@ class ParserTests(unittest.TestCase):
 
     def test_ids_are_stable(self):
         self.assertEqual(stable_id("dgft", "https://example.test/a"), stable_id("dgft", "https://example.test/a"))
+
+
+class DgftResilienceTests(unittest.TestCase):
+    def test_fallback_urls_cover_www_index_and_apex(self):
+        urls = dgft_candidate_urls("trade-notice")
+        self.assertEqual(urls[0], "https://www.dgft.gov.in/CP/?opt=trade-notice")
+        self.assertIn("index.jsp?opt=trade-notice", urls[1])
+        self.assertEqual(urls[2], "https://dgft.gov.in/CP/?opt=trade-notice")
+
+    def test_block_page_is_not_a_listing(self):
+        self.assertFalse(dgft_listing_ok("<html><title>Access Denied</title></html>"))
+        self.assertFalse(dgft_listing_ok("<table id='metaTable'></table>"))
+        listing = "<table id='metaTable'><a href='https://content.dgft.gov.in/Website/x.pdf'>pdf</a></table>"
+        self.assertTrue(dgft_listing_ok(listing))
+
+    def test_403_is_retried_and_404_is_not(self):
+        forbidden = HTTPError("https://www.dgft.gov.in/", 403, "Forbidden", hdrs=None, fp=None)
+        missing = HTTPError("https://www.dgft.gov.in/", 404, "Not Found", hdrs=None, fp=None)
+        self.assertTrue(should_retry(forbidden, 0, 2))
+        self.assertFalse(should_retry(forbidden, 2, 2))
+        self.assertFalse(should_retry(missing, 0, 2))
+        self.assertTrue(should_retry(URLError("timed out"), 0, 2))
+
+    def test_fetch_retries_403_then_returns_body(self):
+        calls = {"n": 0}
+
+        class Response:
+            headers = {"Content-Type": "text/html; charset=utf-8"}
+
+            def read(self):
+                return b"ok"
+
+            def geturl(self):
+                return "https://www.dgft.gov.in/final"
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *args):
+                return False
+
+        def fake_urlopen(request, timeout=45, context=None):
+            calls["n"] += 1
+            if calls["n"] == 1:
+                raise HTTPError(request.full_url, 403, "Forbidden", hdrs=None, fp=None)
+            return Response()
+
+        with patch("policypulse.http.urlopen", fake_urlopen), patch("policypulse.http.time.sleep"):
+            final, body, _ctype = fetch("https://www.dgft.gov.in/CP/?opt=trade-notice", retries=2)
+        self.assertEqual(calls["n"], 2)
+        self.assertEqual(body, b"ok")
+        self.assertIn("dgft.gov.in", final)
+
+
+class IngestGuardTests(unittest.TestCase):
+    def test_failed_dgft_must_not_shrink_the_archive(self):
+        before = {"dgft": 512, "pib": 31}
+        after = {"dgft": 512, "pib": 31}
+        report = [{"id": "dgft", "ok": False, "fetched": 0}, {"id": "pib", "ok": True, "fetched": 2}]
+        self.assertEqual(ingest.failed_sources_shrunk(before, after, report), [])
+        after["dgft"] = 0
+        self.assertEqual(ingest.failed_sources_shrunk(before, after, report), ["dgft"])
+
+
+class SiteCopyTests(unittest.TestCase):
+    def test_digest_uses_the_real_mailbox(self):
+        html = build_site.page_digest()
+        self.assertIn("mailto:nidhi69n@gmail.com?subject=PolicyPulse%20digest", html)
+        self.assertNotIn("example.com", html)
+
+    def test_home_and_pro_state_delivery_and_the_disclaimer(self):
+        home = build_site.page_home([], {"source_families": ["pib", "rbi", "dgft"], "generated_at": "2026-10-27T10:00:00+05:30"})
+        pro = build_site.page_pro()
+        for page in (home, pro):
+            self.assertIn("PolicyPulse is not a government site. Verify every notice on the official source.", page)
+            self.assertIn("weekly brief", page)
+            self.assertNotIn("example.com", page)
+        self.assertIn("updates daily", home)
+        self.assertIn("2023–26 backfill", home)
+        self.assertIn("weekly brief every Monday, at your private link", pro)
+        self.assertIn('id="pro-email"', pro)
+        self.assertNotIn("e31e1b36d2727e090f84fe9c60ab2c15", pro)
+
+    def test_backfill_chip_uses_the_source_date(self):
+        old = {
+            "id": "old",
+            "title": "Notification on import of pulses",
+            "source": "dgft",
+            "source_name": "DGFT",
+            "date": "2024-05-01",
+            "sectors": ["agri"],
+            "what_changed": "Official headline.",
+            "url": "https://content.dgft.gov.in/old.pdf",
+        }
+        fresh = dict(old, id="fresh", date="2026-10-26")
+        undated = dict(old, id="none", date=None)
+        old_html = build_site.card(old, 0)
+        self.assertIn("01 May 2024", old_html)
+        self.assertIn("Backfill", old_html)
+        self.assertNotIn("Backfill", build_site.card(fresh, 0))
+        undated_html = build_site.card(undated, 0)
+        self.assertIn("Date not in source", undated_html)
+        self.assertNotIn("Backfill", undated_html)
+
+    def test_private_brief_is_noindex_and_omits_undated_items(self):
+        items = [
+            {
+                "id": "gst-1",
+                "date": "2026-10-26",
+                "title": "GST ticker",
+                "sectors": ["gst"],
+                "impact": "Open the source before you change a filing.",
+                "url": "https://cbic-gst.gov.in/tickers.html",
+                "source_name": "CBIC / GST",
+            },
+            {
+                "id": "nodate",
+                "date": None,
+                "title": "Undated Hindi headline",
+                "sectors": ["gst"],
+                "impact": "Should not be filed into a week.",
+                "url": "https://pib.gov.in/x",
+                "source_name": "PIB",
+            },
+        ]
+        groups = build_site.group_by_iso_week(items)
+        self.assertEqual(list(groups), ["2026-W44"])
+        self.assertEqual(groups["2026-W44"][0]["id"], "gst-1")
+        monday, sunday = build_site.week_bounds("2026-W44")
+        self.assertEqual(monday, date(2026, 10, 26))
+        self.assertEqual(sunday, date(2026, 11, 1))
+        page = build_site.page_brief(groups["2026-W44"], "2026-W44", monday, sunday, "a" * 32, True)
+        self.assertIn("noindex, nofollow", page)
+        self.assertIn("GST ticker", page)
+        self.assertNotIn("Undated Hindi headline", page)
+        self.assertIn("weekly brief every Monday, at your private link", page)
+        robots = build_site.robots_txt("a" * 32)
+        self.assertIn("Disallow: /policy-pulse/pro/" + ("a" * 32) + "/", robots)
+        self.assertIn("Disallow: /pro/" + ("a" * 32) + "/", robots)
+        sitemap = build_site.write_sitemap(["index.html", "pro.html", "items/gst-1.html"])
+        self.assertNotIn("a" * 32, sitemap)
+        self.assertNotIn("/pro/", sitemap)
+
+    def test_config_keeps_paypal_and_drops_the_example_mailbox(self):
+        existing = """
+        window.POLICY_PULSE_CONFIG = {
+          PAYPAL_CLIENT_ID: "BAAb5cq2I0Xx3lFhRJNBjnuGCVT5VDtWfWHgAuSasCoaA_F4cFzLmDWcDmYhsXG6panQVSaRPR3gvrgE9w",
+          PLAN_ID: "P-7U340289BA306012CNLQF4BI",
+          DIGEST_FORM_ACTION: "",
+          DIGEST_MAILTO: "mailto:you@example.com?subject=old"
+        };
+        """
+        rendered = build_site.render_config(existing, "e31e1b36d2727e090f84fe9c60ab2c15")
+        self.assertIn("BAAb5cq2I0Xx3lFhRJNBjnuGCVT5VDtWfWHgAuSasCoaA_F4cFzLmDWcDmYhsXG6panQVSaRPR3gvrgE9w", rendered)
+        self.assertIn("P-7U340289BA306012CNLQF4BI", rendered)
+        self.assertIn("mailto:nidhi69n@gmail.com?subject=PolicyPulse%20digest", rendered)
+        self.assertIn("pro/e31e1b36d2727e090f84fe9c60ab2c15/", rendered)
+        self.assertNotIn("example.com", rendered)
+        self.assertEqual(build_site._config_string(rendered, "PRO_FORM_ACTION"), "")
 
 
 if __name__ == "__main__":

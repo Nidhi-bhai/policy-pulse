@@ -15,15 +15,17 @@ The site is static HTML in `docs/`. A daily GitHub Actions job refreshes the arc
 | DGFT | [Trade notices](https://www.dgft.gov.in/CP/?opt=trade-notice), [notifications](https://www.dgft.gov.in/CP/?opt=notification), [public notices](https://www.dgft.gov.in/CP/?opt=public-notice) |
 | Gazette | [eGazette homepage](https://egazette.gov.in/) recent extraordinary and weekly issues |
 
-Items are stored in `data/items.json` with the source URL and date. `data/archive/YYYY-MM.json` keeps a growing month-by-month history. A later run merges by id and does not drop older items.
+Items are stored in `data/items.json` with the source URL and date. `data/archive/YYYY-MM.json` keeps a growing month-by-month history. A later run merges by id and does not drop older items. The public feed updates daily. The archive includes a 2023–26 backfill, and each notice is labeled with the date on the official document.
+
+DGFT listings are fetched with a browser User-Agent, retries, and fallback URLs. If every endpoint fails, the run keeps the DGFT rows already in the archive and logs that.
 
 ## Pages
 
 - Latest feed, plus sector pages for exports, agriculture, MSME, banking, GST, pharma, and startups
 - One SEO page per notice
 - `feed.xml` and `sitemap.xml`
-- Free daily digest signup (mailto placeholder, or a Google Form / Formspree URL)
-- Pro weekly sector brief at $9/month via PayPal
+- Free daily digest signup. The form opens a mail draft to nidhi69n@gmail.com. It is hidden if that address is missing. A `DIGEST_FORM_ACTION` URL posts the form instead.
+- Pro is a weekly brief every Monday, at a private link, $9/month via PayPal. The link is unlisted: out of the sitemap, disallowed in robots.txt, and marked noindex. PayPal reveals it after approval. An optional email is sent to a Google Form only when `PRO_FORM_ACTION` is set.
 
 ## Run it locally
 
@@ -39,14 +41,15 @@ Open `docs/index.html`.
 
 ## PayPal and the digest
 
-`docs/config.js` (seeded from `web/config.js`) holds public placeholders:
+`docs/config.js` holds the public PayPal client id and the $9/month plan id. The PayPal secret stays out of the repository.
 
-- `PAYPAL_CLIENT_ID`
-- `PLAN_ID` for a $9/month subscription plan
-- `DIGEST_FORM_ACTION` for a static form endpoint
-- `DIGEST_MAILTO` for the mail-draft fallback
+- `PAYPAL_CLIENT_ID` and `PLAN_ID` turn on the subscription button
+- `DIGEST_MAILTO` is `mailto:nidhi69n@gmail.com?subject=PolicyPulse%20digest`
+- `DIGEST_FORM_ACTION` is an optional static form endpoint for the daily digest
+- `PRO_BRIEF_PATH` is the unlisted weekly brief, revealed after PayPal approves
+- `PRO_FORM_ACTION` is an optional Google Form for the subscription id and email. Empty means that post is skipped
 
-Do not commit secrets. The checkout button stays off until the PayPal values are filled in.
+The brief slug lives in `web/pro-slug.txt`. Set the repository secret `POLICYPULSE_PRO_SLUG` only when a build should publish a different path. The next archive commit will contain that path, because GitHub Pages serves the files in `docs/`.
 
 ## Optional model notes
 
@@ -54,7 +57,7 @@ Set the repository secret `POLICYPULSE_LLM_API_KEY` if you want a model note on 
 
 ## GitHub Pages
 
-The workflow `.github/workflows/daily-ingest.yml` runs every day at 02:20 UTC, commits the archive, and deploys `docs/` with GitHub Pages. Enable Pages with **GitHub Actions** as the source (Settings → Pages). The project URL is:
+The workflow `.github/workflows/daily-ingest.yml` runs every day at 02:20 UTC, commits the archive, and rebuilds `docs/`. GitHub Pages publishes that folder from `main`. The project URL is:
 
 https://nidhi-bhai.github.io/policy-pulse/
 

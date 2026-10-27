@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /policy-pulse/pro/e31e1b36d2727e090f84fe9c60ab2c15/
+Disallow: /pro/e31e1b36d2727e090f84fe9c60ab2c15/
 Sitemap: https://nidhi-bhai.github.io/policy-pulse/sitemap.xml

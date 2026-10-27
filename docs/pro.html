@@ -31,11 +31,16 @@
 <header class="page-head">
   <p class="eyebrow">Pro · $9/month</p>
   <h1>Weekly sector brief.</h1>
-  <p class="lede">Pro is a $9/month PayPal subscription for a weekly sector brief. Payment is handled by PayPal; cancel anytime from your PayPal account.</p>
+  <p class="lede">The public feed updates daily. Pro is a weekly brief every Monday, at your private link. PayPal shows that link after you subscribe. Bookmark it. Card numbers never touch this repository.</p>
+  <p class="disclaimer">PolicyPulse is not a government site. Verify every notice on the official source.</p>
 </header>
 <section class="panel">
   <h2>What you are paying for</h2>
-  <p>A weekly pass across the seven sector pages: exports, agriculture, MSME, banking, GST, pharma, and startups. The underlying notices stay free on this site. The subscription is how the brief is funded.</p>
+  <p>Delivery is a weekly brief every Monday, at your private link. Each edition is a per-sector digest of that week's notices, with the impact note and the official source. The underlying notices stay free on this site.</p>
+  <p>The private page is unlisted. A new edition starts every Monday and is refreshed when the daily archive run picks up notices dated in that week.</p>
+  <label for="pro-email">Email (optional)</label>
+  <input id="pro-email" name="email" type="email" autocomplete="email" placeholder="name@company.in">
+  <p class="note">Checkout works with this field left blank. If a form URL is set in <code>config.js</code>, PolicyPulse sends the subscription id and this email to that form after PayPal approves. With no form URL, the email is not sent anywhere.</p>
   <div id="paypal-button"></div>
   <p id="paypal-status" class="note"></p>
 </section>

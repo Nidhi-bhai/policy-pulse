@@ -8,6 +8,7 @@ the other sources.
 from __future__ import annotations
 
 import re
+import sys
 import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from urllib.parse import urljoin
@@ -343,44 +344,90 @@ class _RowParser(HTMLParser):
             self._cell.append(data)
 
 
+def dgft_candidate_urls(opt: str) -> list[str]:
+    """Primary listing plus fallbacks. Runners sometimes get 403 on only one host."""
+    return [
+        f"https://www.dgft.gov.in/CP/?opt={opt}",
+        f"https://www.dgft.gov.in/CP/index.jsp?opt={opt}",
+        f"https://dgft.gov.in/CP/?opt={opt}",
+    ]
+
+
+def dgft_listing_ok(html: str) -> bool:
+    """A 200 block page has neither the PDF host nor the listing table."""
+    text = html or ""
+    return "content.dgft.gov.in" in text and "metaTable" in text
+
+
+def _dgft_items_from_html(html: str, feed: str, instrument: str, seen: set[str]) -> list[dict]:
+    parser = _RowParser()
+    parser.feed(html)
+    items = []
+    for row in parser.rows:
+        cells = row["cells"]
+        href = row["href"]
+        if len(cells) < 5 or not href or "content.dgft.gov.in" not in href:
+            continue
+        number, year, description, date_text = cells[1], cells[2], cells[3], cells[4]
+        if not description or description.lower() == "description":
+            continue
+        if href in seen:
+            continue
+        seen.add(href)
+        published = parse_date(date_text)
+        label = f"{instrument} {number}".strip()
+        if year:
+            label = f"{label} ({year})"
+        items.append(
+            _item(
+                id=stable_id("dgft", href),
+                source="dgft",
+                source_name="Directorate General of Foreign Trade",
+                feed=f"dgft-{feed}",
+                title=description,
+                url=href,
+                date=published,
+                date_precision="published" if published else "missing",
+                instrument=label,
+                body_name="DGFT",
+            )
+        )
+    return items
+
+
 def fetch_dgft() -> list[dict]:
     items = []
     seen: set[str] = set()
-    for feed, instrument, url in DGFT_PAGES:
-        html = fetch_text(url)
-        parser = _RowParser()
-        parser.feed(html)
-        for row in parser.rows:
-            cells = row["cells"]
-            href = row["href"]
-            if len(cells) < 5 or not href or "content.dgft.gov.in" not in href:
+    failures: list[str] = []
+    for feed, instrument, _url in DGFT_PAGES:
+        html = ""
+        last_error: Exception | None = None
+        for url in dgft_candidate_urls(feed):
+            try:
+                candidate = fetch_text(url, referer="https://www.dgft.gov.in/")
+            except Exception as exc:
+                last_error = exc
+                print(f"dgft {feed} {url} failed: {exc}", file=sys.stderr)
                 continue
-            number, year, description, date_text = cells[1], cells[2], cells[3], cells[4]
-            if not description or description.lower() == "description":
+            if not dgft_listing_ok(candidate):
+                last_error = SourceError(f"{url} did not include the DGFT document table")
+                print(f"dgft {feed} {url} rejected: not a document listing", file=sys.stderr)
                 continue
-            if href in seen:
-                continue
-            seen.add(href)
-            published = parse_date(date_text)
-            label = f"{instrument} {number}".strip()
-            if year:
-                label = f"{label} ({year})"
-            items.append(
-                _item(
-                    id=stable_id("dgft", href),
-                    source="dgft",
-                    source_name="Directorate General of Foreign Trade",
-                    feed=f"dgft-{feed}",
-                    title=description,
-                    url=href,
-                    date=published,
-                    date_precision="published" if published else "missing",
-                    instrument=label,
-                    body_name="DGFT",
-                )
-            )
+            html = candidate
+            break
+        if not html:
+            failures.append(f"{feed}: {last_error}")
+            continue
+        items.extend(_dgft_items_from_html(html, feed, instrument, seen))
     if not items:
-        raise SourceError("DGFT pages returned no documents")
+        detail = "; ".join(failures) or "no documents"
+        raise SourceError(f"DGFT pages returned no documents ({detail})")
+    if failures:
+        print(
+            "dgft partial failure; keeping documents from the feeds that responded: "
+            + "; ".join(failures),
+            file=sys.stderr,
+        )
     return items
 
 

@@ -19,8 +19,34 @@ from policypulse.tagger import annotate  # noqa: E402
 from policypulse.text import now_ist  # noqa: E402
 
 
+def source_counts(items: list[dict]) -> dict[str, int]:
+    counts: dict[str, int] = {}
+    for item in items:
+        source = item.get("source") or ""
+        counts[source] = counts.get(source, 0) + 1
+    return counts
+
+
+def failed_sources_shrunk(before: dict[str, int], after: dict[str, int], report: list[dict]) -> list[str]:
+    """Sources that failed this run and would leave the archive with fewer rows."""
+    shrunk = []
+    for row in report:
+        if row.get("ok"):
+            continue
+        source_id = row.get("id") or ""
+        if after.get(source_id, 0) < before.get(source_id, 0):
+            shrunk.append(source_id)
+    return shrunk
+
+
+def retag(items: list[dict]) -> list[dict]:
+    """Recompute sector tags from stored titles so rule fixes apply without a refetch."""
+    return [annotate(dict(item)) for item in items]
+
+
 def main() -> int:
     existing = load_items()
+    before = source_counts(existing)
     known = {item["id"] for item in existing}
     fresh: list[dict] = []
     report = []
@@ -51,6 +77,11 @@ def main() -> int:
                 }
             )
             print(f"ERR {source_id:10} {exc}", file=sys.stderr)
+            if source_id == "dgft":
+                print(
+                    f"DGFT fetch failed; keeping {before.get('dgft', 0)} existing items",
+                    file=sys.stderr,
+                )
             traceback.print_exc()
 
     if llm_enabled():
@@ -80,7 +111,15 @@ def main() -> int:
     for row in fresh:
         row["fetched_at"] = stamped
 
-    merged = merge_all(existing, fresh)
+    merged = retag(merge_all(existing, fresh))
+    after = source_counts(merged)
+    shrunk = failed_sources_shrunk(before, after, report)
+    if shrunk:
+        print(
+            "refusing to save; a failed fetch would drop archived items: " + ", ".join(shrunk),
+            file=sys.stderr,
+        )
+        return 1
     families = {row["source"] for row in merged}
     ok_families = {row["id"] for row in report if row["ok"] and row["fetched"] > 0}
     manifest = {

@@ -36,6 +36,8 @@ jobs:
         run: python scripts/ingest.py
 
       - name: Build static site
+        env:
+          POLICYPULSE_PRO_SLUG: ${{ secrets.POLICYPULSE_PRO_SLUG }}
         run: python scripts/build_site.py
 
       - name: Commit the growing archive

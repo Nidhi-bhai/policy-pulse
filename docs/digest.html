@@ -31,12 +31,12 @@
 <header class="page-head">
   <p class="eyebrow">Free</p>
   <h1>Daily digest signup.</h1>
-  <p class="lede">A static site cannot send mail on its own. Use this form as a mailto placeholder, or set <code>DIGEST_FORM_ACTION</code> in <code>config.js</code> to a Google Form or other static form endpoint.</p>
+  <p class="lede">The public feed updates daily. This form opens an email draft so you can ask for that digest. Set <code>DIGEST_FORM_ACTION</code> in <code>config.js</code> when you want the form to post to a Google Form instead.</p>
 </header>
-<form id="digest-form" class="panel" method="post" action="mailto:you@example.com" enctype="text/plain">
-  <p id="digest-mode" class="note">Placeholder mode: submitting opens a mail draft to the address in config.js. Replace <code>DIGEST_MAILTO</code> before you share the page.</p>
+<p id="digest-mode" class="note">Submitting opens an email draft to request the free daily digest.</p>
+<form id="digest-form" class="panel" method="post" action="mailto:nidhi69n@gmail.com?subject=PolicyPulse%20digest" enctype="text/plain">
   <label for="email">Email</label>
-  <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@company.com">
+  <input id="email" name="email" type="email" required autocomplete="email" placeholder="name@company.in">
   <label for="sector">Sector you care about</label>
   <select id="sector" name="sector"><option value="exports">Exports &amp; trade</option><option value="agri">Agriculture</option><option value="msme">MSME</option><option value="banking">Banking &amp; finance</option><option value="gst">GST &amp; indirect tax</option><option value="pharma">Pharma &amp; health</option><option value="startups">Startups</option></select>
   <p><button class="button solid" type="submit">Request the free daily digest</button></p>
