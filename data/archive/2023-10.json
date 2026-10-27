@@ -1,0 +1,30 @@
+{
+  "month": "2023-10",
+  "item_count": 1,
+  "items": [
+    {
+      "id": "6d72fdfdb7e70aca",
+      "source": "dgft",
+      "source_name": "Directorate General of Foreign Trade",
+      "feed": "dgft-notification",
+      "title": "Imposition of Minimum Export Price on export of Onions",
+      "url": "https://content.dgft.gov.in/Website/dgftprod/d73aebd9-ab58-4652-8987-607fa0cc69ef/DGFT Notification No 42-2023 dated 28.10.2023-ENGLISH.pdf",
+      "date": "2023-10-28",
+      "date_precision": "published",
+      "excerpt": "",
+      "instrument": "DGFT notification 42/2023 (2023-24)",
+      "body_name": "DGFT",
+      "language": "en",
+      "sectors": [
+        "exports"
+      ],
+      "what_changed": "Listed by the source as DGFT notification 42/2023 (2023-24), DGFT. Official headline: “Imposition of Minimum Export Price on export of Onions”.",
+      "who_affected": "Sector tags come only from words in that text: Exports & trade. A tag means the word appeared. It does not mean every firm in that sector is covered.",
+      "impact": "The business effect cannot be read off the headline alone. Open the source before you change a price, a filing, or a shipment.",
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-10-27T13:42:57+05:30",
+      "first_seen": "2026-10-27T13:42:07+05:30"
+    }
+  ]
+}
