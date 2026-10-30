@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-30T08:49:44+05:30",
-  "item_count": 811,
+  "generated_at": "2026-10-30T14:17:16+05:30",
+  "item_count": 833,
   "source_families": [
     "cbic",
     "dgft",
@@ -11,7 +11,6 @@
   ],
   "sources_ok": [
     "cbic",
-    "dgft",
     "egazette",
     "pib",
     "rbi",
@@ -24,7 +23,7 @@
       "name": "Press Information Bureau",
       "url": "https://www.pib.gov.in/allRel.aspx?reg=3&lang=1",
       "ok": true,
-      "fetched": 20,
+      "fetched": 28,
       "error": null
     },
     {
@@ -55,9 +54,9 @@
       "id": "dgft",
       "name": "DGFT",
       "url": "https://www.dgft.gov.in/CP/?opt=trade-notice",
-      "ok": true,
-      "fetched": 511,
-      "error": null
+      "ok": false,
+      "fetched": 0,
+      "error": "SourceError: DGFT pages returned no documents (trade-notice: HTTP Error 403: Forbidden; notification: HTTP Error 403: Forbidden; public-notice: HTTP Error 403: Forbidden)"
     },
     {
       "id": "egazette",
