@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "item_count": 384,
+  "item_count": 385,
   "items": [
     {
       "id": "3f4e22405c52c10e",
@@ -482,7 +482,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-31T14:04:11+05:30"
     },
     {
@@ -505,7 +505,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-31T14:04:11+05:30"
     },
     {
@@ -532,6 +532,31 @@
       "first_seen": "2026-10-31T14:04:11+05:30"
     },
     {
+      "id": "42115520ea759c58",
+      "source": "sebi",
+      "source_name": "Securities and Exchange Board of India",
+      "feed": "sebi-rss",
+      "title": "Notices of Attachment of Bank and Post Office accounts and Demat Accounts and mutual Fund Folios with AP Nos. 15863 and 15864 of 2026 dated October 30, 2026 against Jalaj Agrawal (PAN: AUDPA0226H) in the matter of market manipulation using social media in the scrip of Moksh Ornaments Limited under RC No. 9304 of 2026",
+      "url": "https://www.sebi.gov.in/enforcement/recovery-proceedings/oct-2026/notices-of-attachment-of-bank-and-post-office-accounts-and-demat-accounts-and-mutual-fund-folios-with-ap-nos-15863-and-15864-of-2026-dated-october-30-2026-against-jalaj-agrawal-pan-audpa0226h-in-_105538.html",
+      "date": "2026-10-30",
+      "date_precision": "published",
+      "excerpt": "Notices of Attachment of Bank and Post Office accounts and Demat Accounts and mutual Fund Folios with AP Nos. 15863 and 15864 of 2026 dated October 30, 2026 against Jalaj Agrawal (PAN: AUDPA0226H) in the matter of market manipulation using social media in the scrip of Moksh...",
+      "instrument": "SEBI update",
+      "body_name": "",
+      "language": "en",
+      "sectors": [
+        "banking"
+      ],
+      "what_changed": "Listed by the source as SEBI update. Official headline: “Notices of Attachment of Bank and Post Office accounts and Demat Accounts and mutual Fund Folios with AP Nos. 15863 and 15864 of 2026 dated October 30, 2026 against Jalaj Agrawal (PAN: AUDPA0226H) in the matter of market manipulation using social media in the scrip of Moksh Ornaments Limited under RC No. 9304 of 2026”. Source text includes: “Notices of Attachment of Bank and Post Office accounts and Demat Accounts and mutual Fund Folios with AP Nos. 15863 and 15864 of 2026 dated October 30, 2026 against Jalaj Agrawal (PAN: AUDPA0226H) in the matter of market manipulation using social media in the scrip of Moksh...”.",
+      "who_affected": "Sector tags come only from words in that text: Banking & finance. A tag means the word appeared. It does not mean every firm in that sector is covered.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
+      "first_seen": "2026-11-03T08:46:15+05:30"
+    },
+    {
       "id": "ed6b8f1e0859005b",
       "source": "sebi",
       "source_name": "Securities and Exchange Board of India",
@@ -551,7 +576,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-31T14:04:11+05:30"
     },
     {
@@ -574,7 +599,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-31T08:45:11+05:30"
     },
     {
@@ -599,7 +624,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-31T08:45:11+05:30"
     },
     {
@@ -624,7 +649,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-31T08:45:11+05:30"
     },
     {
@@ -649,7 +674,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-31T08:45:11+05:30"
     },
     {
@@ -674,7 +699,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-31T08:45:11+05:30"
     },
     {
@@ -820,7 +845,7 @@
       "impact_from_notice": true,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-31T08:45:11+05:30"
     },
     {
@@ -843,7 +868,7 @@
       "impact_from_notice": true,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-31T08:45:11+05:30"
     },
     {
@@ -868,7 +893,7 @@
       "impact_from_notice": true,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-31T08:45:11+05:30"
     },
     {
@@ -891,7 +916,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-31T08:45:11+05:30"
     },
     {
@@ -914,7 +939,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-31T08:45:11+05:30"
     },
     {
@@ -937,7 +962,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-31T08:45:11+05:30"
     },
     {
@@ -960,7 +985,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-31T08:45:11+05:30"
     },
     {
@@ -983,7 +1008,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-31T08:45:11+05:30"
     },
     {
@@ -1006,7 +1031,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-31T08:45:11+05:30"
     },
     {
@@ -1029,7 +1054,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-31T08:45:11+05:30"
     },
     {
@@ -1054,7 +1079,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-31T08:45:11+05:30"
     },
     {
@@ -1102,7 +1127,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T08:46:07+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-31T08:45:11+05:30"
     },
     {
@@ -1127,7 +1152,7 @@
       "impact_from_notice": true,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T08:46:07+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-31T08:45:11+05:30"
     },
     {
@@ -2190,14 +2215,14 @@
       "url": "https://www.sebi.gov.in/enforcement/recovery-proceedings/oct-2026/notices-of-attachment-of-bank-and-post-office-accounts-and-demat-accounts-and-mutual-fund-folios-with-ap-nos-15759-and-15760-of-2026-dated-october-28-2026-against-aahuti-rasik-mistry-pan-akspm8453-_105521.html",
       "date": "2026-10-28",
       "date_precision": "published",
-      "excerpt": "Notices of Attachment of Bank and Post Office accounts and Demat Accounts and mutual Fund Folios with AP Nos. 15759 and 15760 of 2026 dated October 28, 2026 against Aahuti Rasik Mistry (PAN: AKSPM8453F) and Manish Mishra (PAN: AMPPM6823L) (‘Defaulters’) jointly and severally…",
+      "excerpt": "Notices of Attachment of Bank and Post Office accounts and Demat Accounts and mutual Fund Folios with AP Nos. 15759 and 15760 of 2026 dated October 28, 2026 against Aahuti Rasik Mistry (PAN: AKSPM8453F) and Manish Mishra (PAN: AMPPM6823L) (‘Defaulters’) jointly and severally...",
       "instrument": "SEBI update",
       "body_name": "",
       "language": "en",
       "sectors": [
         "banking"
       ],
-      "what_changed": "Listed by the source as SEBI update. Official headline: “Notices of Attachment of Bank and Post Office accounts and Demat Accounts and mutual Fund Folios with AP Nos. 15759 and 15760 of 2026 dated October 28, 2026 against Aahuti Rasik Mistry (PAN: AKSPM8453F) and Manish Mishra (PAN: AMPPM6823L) (‘Defaulters’) jointly and severally in the matter of Sadhna Broadcast Limited under RC No. 9300 of 2026”. Source text includes: “Notices of Attachment of Bank and Post Office accounts and Demat Accounts and mutual Fund Folios with AP Nos. 15759 and 15760 of 2026 dated October 28, 2026 against Aahuti Rasik Mistry (PAN: AKSPM8453F) and Manish Mishra (PAN: AMPPM6823L) (‘Defaulters’) jointly and severally…”.",
+      "what_changed": "Listed by the source as SEBI update. Official headline: “Notices of Attachment of Bank and Post Office accounts and Demat Accounts and mutual Fund Folios with AP Nos. 15759 and 15760 of 2026 dated October 28, 2026 against Aahuti Rasik Mistry (PAN: AKSPM8453F) and Manish Mishra (PAN: AMPPM6823L) (‘Defaulters’) jointly and severally in the matter of Sadhna Broadcast Limited under RC No. 9300 of 2026”. Source text includes: “Notices of Attachment of Bank and Post Office accounts and Demat Accounts and mutual Fund Folios with AP Nos. 15759 and 15760 of 2026 dated October 28, 2026 against Aahuti Rasik Mistry (PAN: AKSPM8453F) and Manish Mishra (PAN: AMPPM6823L) (‘Defaulters’) jointly and severally...”.",
       "who_affected": "Sector tags come only from words in that text: Banking & finance. A tag means the word appeared. It does not mean every firm in that sector is covered.",
       "impact": "",
       "impact_from_notice": false,
@@ -2976,7 +3001,7 @@
       "impact_from_notice": true,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-28T08:43:28+05:30"
     },
     {
@@ -3001,30 +3026,30 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-28T08:43:28+05:30"
     },
     {
       "id": "b9ffc2973912a9f9",
       "source": "sebi",
       "source_name": "Securities and Exchange Board of India",
-      "feed": "sebi-rss",
+      "feed": "sebi-circulars",
       "title": "Extension of timeline for compliance with terms and conditions by Debenture Trustees (DTs) for carrying out activities outside the purview of SEBI",
       "url": "https://www.sebi.gov.in/legal/circulars/oct-2026/extension-of-timeline-for-compliance-with-terms-and-conditions-by-debenture-trustees-dts-for-carrying-out-activities-outside-the-purview-of-sebi_105454.html",
       "date": "2026-10-27",
       "date_precision": "published",
       "excerpt": "Extension of timeline for compliance with terms and conditions by Debenture Trustees (DTs) for carrying out activities outside the purview of SEBI",
-      "instrument": "SEBI update",
+      "instrument": "SEBI circular",
       "body_name": "",
       "language": "en",
       "sectors": [],
-      "what_changed": "Listed by the source as SEBI update. Official headline: “Extension of timeline for compliance with terms and conditions by Debenture Trustees (DTs) for carrying out activities outside the purview of SEBI”.",
+      "what_changed": "Listed by the source as SEBI circular. Official headline: “Extension of timeline for compliance with terms and conditions by Debenture Trustees (DTs) for carrying out activities outside the purview of SEBI”.",
       "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
       "impact": "The official text refers to a timeline. Read the source for the date before you rely on it. PolicyPulse does not restate a deadline that is not in the headline. The official text mentions a registration, licence, or compliance step. Open the source to see who it applies to.",
       "impact_from_notice": true,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-28T08:43:28+05:30"
     },
     {
@@ -3516,7 +3541,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -3846,7 +3871,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T08:46:07+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -4086,7 +4111,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -4111,7 +4136,7 @@
       "impact": "The official text says an existing instruction is amended or revised. Check the source for whether a form, condition, or list you already follow has changed.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -4136,7 +4161,7 @@
       "impact": "The official text says an existing instruction is amended or revised. Check the source for whether a form, condition, or list you already follow has changed.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -4205,7 +4230,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -4251,7 +4276,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T08:46:07+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -4460,7 +4485,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -4554,7 +4579,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T08:46:07+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -4579,7 +4604,7 @@
       "impact": "The official text says an existing instruction is amended or revised. Check the source for whether a form, condition, or list you already follow has changed.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T08:46:07+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -4604,7 +4629,7 @@
       "impact": "The official text says an existing instruction is amended or revised. Check the source for whether a form, condition, or list you already follow has changed.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -4629,7 +4654,7 @@
       "impact": "The official text says an existing instruction is amended or revised. Check the source for whether a form, condition, or list you already follow has changed.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -4654,7 +4679,7 @@
       "impact": "The official text says an existing instruction is amended or revised. Check the source for whether a form, condition, or list you already follow has changed.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -4703,7 +4728,7 @@
       "impact": "The official text says an existing instruction is amended or revised. Check the source for whether a form, condition, or list you already follow has changed.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T08:46:07+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -4729,7 +4754,7 @@
       "impact": "The official text refers to a timeline. Read the source for the date before you rely on it. PolicyPulse does not restate a deadline that is not in the headline.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T08:46:07+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -4754,7 +4779,7 @@
       "impact": "The official text says an existing instruction is amended or revised. Check the source for whether a form, condition, or list you already follow has changed. The official text mentions a duty, tariff, or incentive. The rate, if any, is only in the source document. Do not take a number from this brief.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T08:46:07+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -5007,7 +5032,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -5032,7 +5057,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T08:46:07+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -5082,7 +5107,7 @@
       "impact": "The official text says an existing instruction is amended or revised. Check the source for whether a form, condition, or list you already follow has changed.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T08:46:07+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -5107,7 +5132,7 @@
       "impact": "The official text says an existing instruction is amended or revised. Check the source for whether a form, condition, or list you already follow has changed.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T08:46:07+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -5180,7 +5205,7 @@
       "impact": "The official text says an existing instruction is amended or revised. Check the source for whether a form, condition, or list you already follow has changed.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T08:46:07+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -5206,7 +5231,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T08:46:07+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -5231,7 +5256,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -5254,7 +5279,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -5277,7 +5302,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -5300,7 +5325,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -5325,7 +5350,7 @@
       "impact": "The official text says an existing instruction is amended or revised. Check the source for whether a form, condition, or list you already follow has changed.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T08:46:07+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -8897,7 +8922,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -8920,7 +8945,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -8945,7 +8970,7 @@
       "impact": "The official text mentions a registration, licence, or compliance step. Open the source to see who it applies to.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -8968,7 +8993,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-02T15:10:18+05:30",
+      "fetched_at": "2026-11-03T08:46:15+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     }
