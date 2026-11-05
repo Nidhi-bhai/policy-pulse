@@ -1,8 +1,572 @@
 {
   "version": 1,
-  "updated_at": "2026-11-05T08:48:15+05:30",
-  "item_count": 1210,
+  "updated_at": "2026-11-05T15:09:53+05:30",
+  "item_count": 1244,
   "items": [
+    {
+      "id": "pib-2333027",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-english-listing",
+      "title": "Vice-President addresses Valedictory Session of Bharat Renewable Energy Summit & Expo 2026 in New Delhi",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2333027&lang=1",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "Vice President's Secretariat",
+      "language": "en",
+      "sectors": [],
+      "what_changed": "Listed by the source as PIB press release, Vice President's Secretariat. Official headline: “Vice-President addresses Valedictory Session of Bharat Renewable Energy Summit & Expo 2026 in New Delhi”.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "pib-2332857",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-english-listing",
+      "title": "Prime Minister shares Sanskrit Subhashitam highlighting the importance of truth, knowledge and virtuous conduct",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2332857&lang=1",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "Prime Minister's Office",
+      "language": "en",
+      "sectors": [],
+      "what_changed": "Listed by the source as PIB press release, Prime Minister's Office. Official headline: “Prime Minister shares Sanskrit Subhashitam highlighting the importance of truth, knowledge and virtuous conduct”.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "pib-2332944",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-english-listing",
+      "title": "TRAI Assesses Mobile Network Quality across Nuh & Palwal cities and adjoining areas (in Haryana LSA) during the month of July 2026",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2332944&lang=1",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "Ministry of Communications",
+      "language": "en",
+      "sectors": [],
+      "what_changed": "Listed by the source as PIB press release, Ministry of Communications. Official headline: “TRAI Assesses Mobile Network Quality across Nuh & Palwal cities and adjoining areas (in Haryana LSA) during the month of July 2026”.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "pib-2332934",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-english-listing",
+      "title": "Inter-Ministerial Group Recommends Asset Monetisation Proposals Worth Over ₹1,100 Crore for Approval by Cabinet-Delegated Alternative Mechanism",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2332934&lang=1",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "Ministry of Finance",
+      "language": "en",
+      "sectors": [],
+      "what_changed": "Listed by the source as PIB press release, Ministry of Finance. Official headline: “Inter-Ministerial Group Recommends Asset Monetisation Proposals Worth Over ₹1,100 Crore for Approval by Cabinet-Delegated Alternative Mechanism”.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "pib-2332985",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-english-listing",
+      "title": "Union Health Minister reviews progress of AIIMS Awantipora; directs expeditious completion of remaining construction works and early operationalisation",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2332985&lang=1",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "Ministry of Health and Family Welfare",
+      "language": "en",
+      "sectors": [],
+      "what_changed": "Listed by the source as PIB press release, Ministry of Health and Family Welfare. Official headline: “Union Health Minister reviews progress of AIIMS Awantipora; directs expeditious completion of remaining construction works and early operationalisation”.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "pib-2332932",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-english-listing",
+      "title": "Union Ministry of Health and Family Welfare achieves 100% of targets under Special Campaign 6",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2332932&lang=1",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "Ministry of Health and Family Welfare",
+      "language": "en",
+      "sectors": [],
+      "what_changed": "Listed by the source as PIB press release. Official headline: “Union Ministry of Health and Family Welfare achieves 100% of targets under Special Campaign 6”.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "pib-2332947",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-english-listing",
+      "title": "Ministry of Micro, Small and Medium Enterprises (MSME) organised an awareness workshop on SRI Fund for supporting Women-Led MSMEs",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2332947&lang=1",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "Ministry of Micro,Small & Medium Enterprises",
+      "language": "en",
+      "sectors": [
+        "msme"
+      ],
+      "what_changed": "Listed by the source as PIB press release, Ministry of Micro,Small & Medium Enterprises. Official headline: “Ministry of Micro, Small and Medium Enterprises (MSME) organised an awareness workshop on SRI Fund for supporting Women-Led MSMEs”.",
+      "who_affected": "Sector tags come only from words in that text: MSME. A tag means the word appeared. It does not mean every firm in that sector is covered.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "pib-2332841",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-english-listing",
+      "title": "4th Conference of Mining Ministers to Be Held in Goa on 5–6 November 2026",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2332841&lang=1",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "Ministry of Mines",
+      "language": "en",
+      "sectors": [],
+      "what_changed": "Listed by the source as PIB press release, Ministry of Mines. Official headline: “4th Conference of Mining Ministers to Be Held in Goa on 5–6 November 2026”.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "pib-2333012",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-english-listing",
+      "title": "Vice President of India Honours the Ministry of Railways with the PM Surya Ghar Excellence Award",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2333012&lang=1",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "Ministry of Railways",
+      "language": "en",
+      "sectors": [],
+      "what_changed": "Listed by the source as PIB press release. Official headline: “Vice President of India Honours the Ministry of Railways with the PM Surya Ghar Excellence Award”.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "pib-2332894",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-english-listing",
+      "title": "NRAA, ICAR-NBSS&LUP and DoLR Organise National-Level Consultation to Strengthen Science-Based Watershed Management",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2332894&lang=1",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "Ministry of Rural Development",
+      "language": "en",
+      "sectors": [],
+      "what_changed": "Listed by the source as PIB press release, Ministry of Rural Development. Official headline: “NRAA, ICAR-NBSS&LUP and DoLR Organise National-Level Consultation to Strengthen Science-Based Watershed Management”.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "pib-2332844",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-english-listing",
+      "title": "Department of Rural Development and DAHD Join Hands to Boost Fodder Production, Strengthen Livestock Infrastructure and Support Rural Livelihoods under VB–G RAM G",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2332844&lang=1",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "Ministry of Rural Development",
+      "language": "en",
+      "sectors": [
+        "agri"
+      ],
+      "what_changed": "Listed by the source as PIB press release, Ministry of Rural Development. Official headline: “Department of Rural Development and DAHD Join Hands to Boost Fodder Production, Strengthen Livestock Infrastructure and Support Rural Livelihoods under VB–G RAM G”.",
+      "who_affected": "Sector tags come only from words in that text: Agriculture. A tag means the word appeared. It does not mean every firm in that sector is covered.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "pib-2332987",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-english-listing",
+      "title": "Bureau of Indian Standards Hallmarking",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2332987&lang=1",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "PIB Backgrounder",
+      "language": "en",
+      "sectors": [],
+      "what_changed": "Listed by the source as PIB press release, PIB Backgrounder. Official headline: “Bureau of Indian Standards Hallmarking”.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "pib-2332964",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-english-listing",
+      "title": "CAPEX Support Scheme to Promote Critical Mineral Processing",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2332964&lang=1",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "PIB Backgrounder",
+      "language": "en",
+      "sectors": [],
+      "what_changed": "Listed by the source as PIB press release, PIB Backgrounder. Official headline: “CAPEX Support Scheme to Promote Critical Mineral Processing”.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "pib-2332858",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-english-listing",
+      "title": "NHRC, India’s intervention leads to establishment of a Gender-Neutral Cell at Central Prison, Hyderabad for persons with diverse gender identities and expressions",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2332858&lang=1",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "National Human Rights Commission",
+      "language": "en",
+      "sectors": [],
+      "what_changed": "Listed by the source as PIB press release, National Human Rights Commission. Official headline: “NHRC, India’s intervention leads to establishment of a Gender-Neutral Cell at Central Prison, Hyderabad for persons with diverse gender identities and expressions”.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "52e5879b2142c311",
+      "source": "rbi",
+      "source_name": "Reserve Bank of India",
+      "feed": "rbi-press-releases",
+      "title": "Directions under Section 35A read with Section 56 of the Banking Regulation Act, 1949 – The Pusad Urban Co-operative Bank Ltd., Pusad, Dist. Yavatmal, Maharashtra – Extension of Period",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63924",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "The Reserve Bank of India issued Directions under Section 35A read with Section 56 of the Banking Regulation Act, 1949 to The Pusad Urban Co-operative Bank Ltd., Pusad, Dist. Yavatmal, Maharashtra vide Directive No. NGP.DOS.SSM3.No.S611/5-04-166/2025-2026 dated November 06...",
+      "instrument": "RBI press release",
+      "body_name": "",
+      "language": "en",
+      "sectors": [
+        "banking"
+      ],
+      "what_changed": "Listed by the source as RBI press release. Official headline: “Directions under Section 35A read with Section 56 of the Banking Regulation Act, 1949 – The Pusad Urban Co-operative Bank Ltd., Pusad, Dist. Yavatmal, Maharashtra – Extension of Period”. Source text includes: “The Reserve Bank of India issued Directions under Section 35A read with Section 56 of the Banking Regulation Act, 1949 to The Pusad Urban Co-operative Bank Ltd., Pusad, Dist. Yavatmal, Maharashtra vide Directive No. NGP.DOS.SSM3.No.S611/5-04-166/2025-2026 dated November 06...”.",
+      "who_affected": "Sector tags come only from words in that text: Banking & finance. A tag means the word appeared. It does not mean every firm in that sector is covered.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "b52a4c06e4aee53c",
+      "source": "rbi",
+      "source_name": "Reserve Bank of India",
+      "feed": "rbi-press-releases",
+      "title": "Underwriting Auction for sale of Government Securities for ₹36,000 crore on November 06, 2026",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63923",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "Government of India has announced the sale (re-issue) of Government Securities, as detailed below, through auction to be held on November 06, 2026 (Friday). As per the extant scheme of underwriting commitment notified on November 14, 2007, the amounts of Minimum Underwriting...",
+      "instrument": "RBI press release",
+      "body_name": "",
+      "language": "en",
+      "sectors": [
+        "banking"
+      ],
+      "what_changed": "Listed by the source as RBI press release. Official headline: “Underwriting Auction for sale of Government Securities for ₹36,000 crore on November 06, 2026”. Source text includes: “Government of India has announced the sale (re-issue) of Government Securities, as detailed below, through auction to be held on November 06, 2026 (Friday). As per the extant scheme of underwriting commitment notified on November 14, 2007, the amounts of Minimum Underwriting...”.",
+      "who_affected": "Sector tags come only from words in that text: Banking & finance. A tag means the word appeared. It does not mean every firm in that sector is covered.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "79d353ddb8fe465d",
+      "source": "rbi",
+      "source_name": "Reserve Bank of India",
+      "feed": "rbi-press-releases",
+      "title": "Directions under Section 35A read with Section 56 of the Banking Regulation Act, 1949 – Urban Co-operative Bank Limited, Dehradun - Extension of Period",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63922",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "The Reserve Bank of India issued Directions under Section 35A read with Section 56 of the Banking Regulation Act, 1949 to Urban Co-operative Bank Limited, Dehradun vide Directive No. DDN.DOS.QAG.No.S168/03-04-007/2025-2026 dated February 09, 2026, for a period of 06 months…",
+      "instrument": "RBI press release",
+      "body_name": "",
+      "language": "en",
+      "sectors": [
+        "banking"
+      ],
+      "what_changed": "Listed by the source as RBI press release. Official headline: “Directions under Section 35A read with Section 56 of the Banking Regulation Act, 1949 – Urban Co-operative Bank Limited, Dehradun - Extension of Period”. Source text includes: “The Reserve Bank of India issued Directions under Section 35A read with Section 56 of the Banking Regulation Act, 1949 to Urban Co-operative Bank Limited, Dehradun vide Directive No. DDN.DOS.QAG.No.S168/03-04-007/2025-2026 dated February 09, 2026, for a period of 06 months…”.",
+      "who_affected": "Sector tags come only from words in that text: Banking & finance. A tag means the word appeared. It does not mean every firm in that sector is covered.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "5e3390a0d3d4e4a7",
+      "source": "rbi",
+      "source_name": "Reserve Bank of India",
+      "feed": "rbi-press-releases",
+      "title": "Result of the Overnight Variable Rate Reverse Repo (VRRR) auction held on November 05, 2026",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63921",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "",
+      "instrument": "RBI press release",
+      "body_name": "",
+      "language": "en",
+      "sectors": [
+        "banking"
+      ],
+      "what_changed": "Listed by the source as RBI press release. Official headline: “Result of the Overnight Variable Rate Reverse Repo (VRRR) auction held on November 05, 2026”.",
+      "who_affected": "Sector tags come only from words in that text: Banking & finance. A tag means the word appeared. It does not mean every firm in that sector is covered.",
+      "impact": "The official text is about a banking or money-market instrument. Treasury and credit teams should read the source for the operative line.",
+      "impact_from_notice": true,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "c8db6567cc39043e",
+      "source": "rbi",
+      "source_name": "Reserve Bank of India",
+      "feed": "rbi-press-releases",
+      "title": "Money Market Operations as on November 04, 2026",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63920",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "",
+      "instrument": "RBI press release",
+      "body_name": "",
+      "language": "en",
+      "sectors": [],
+      "what_changed": "Listed by the source as RBI press release. Official headline: “Money Market Operations as on November 04, 2026”.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "efce57bc9fa6035b",
+      "source": "sebi",
+      "source_name": "Securities and Exchange Board of India",
+      "feed": "sebi-circulars",
+      "title": "[Enclosure]",
+      "url": "https://www.sebi.gov.in/legal/circulars/nov-2026/revision-of-limits-relating-to-requirement-of-underlying-exposure-for-currency-derivatives-contracts_105614.html",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "",
+      "instrument": "SEBI circular",
+      "body_name": "",
+      "language": "en",
+      "sectors": [],
+      "what_changed": "Listed by the source as SEBI circular. Official headline: “[Enclosure]”.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "3086214db450ad51",
+      "source": "egazette",
+      "source_name": "Gazette of India",
+      "feed": "egazette-extraordinary",
+      "title": "Immigration and Foreigners (Exemption) (Amend... [CG-DL-E-05112026-277692]",
+      "url": "https://egazette.gov.in/",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "Gazette ID CG-DL-E-05112026-277692. The eGazette homepage lists this extraordinary issue. The PDF is the download control beside that ID.",
+      "instrument": "Extraordinary Gazette CG-DL-E-05112026-277692",
+      "body_name": "Ministry of Home Affairs",
+      "language": "en",
+      "sectors": [],
+      "what_changed": "Listed by the source as Extraordinary Gazette CG-DL-E-05112026-277692, Ministry of Home Affairs. Official headline: “Immigration and Foreigners (Exemption) (Amend... [CG-DL-E-05112026-277692]”. Source text includes: “Gazette ID CG-DL-E-05112026-277692. The eGazette homepage lists this extraordinary issue. The PDF is the download control beside that ID.”.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "The official text says an existing instruction is amended or revised. Check the source for whether a form, condition, or list you already follow has changed.",
+      "impact_from_notice": true,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "c7cdbfe302b7b1c4",
+      "source": "egazette",
+      "source_name": "Gazette of India",
+      "feed": "egazette-extraordinary",
+      "title": "Publication of notification under Section 3D... [CG-DL-E-05112026-277691]",
+      "url": "https://egazette.gov.in/",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "Gazette ID CG-DL-E-05112026-277691. The eGazette homepage lists this extraordinary issue. The PDF is the download control beside that ID.",
+      "instrument": "Extraordinary Gazette CG-DL-E-05112026-277691",
+      "body_name": "Ministry of Road Transport and Highways",
+      "language": "en",
+      "sectors": [],
+      "what_changed": "Listed by the source as Extraordinary Gazette CG-DL-E-05112026-277691, Ministry of Road Transport and Highways. Official headline: “Publication of notification under Section 3D... [CG-DL-E-05112026-277691]”. Source text includes: “Gazette ID CG-DL-E-05112026-277691. The eGazette homepage lists this extraordinary issue. The PDF is the download control beside that ID.”.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "3e459cf8ec4783a3",
+      "source": "egazette",
+      "source_name": "Gazette of India",
+      "feed": "egazette-extraordinary",
+      "title": "Publication of notification in part II of sec... [CG-AS-E-05112026-277690]",
+      "url": "https://egazette.gov.in/",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "Gazette ID CG-AS-E-05112026-277690. The eGazette homepage lists this extraordinary issue. The PDF is the download control beside that ID.",
+      "instrument": "Extraordinary Gazette CG-AS-E-05112026-277690",
+      "body_name": "Ministry of Railways",
+      "language": "en",
+      "sectors": [],
+      "what_changed": "Listed by the source as Extraordinary Gazette CG-AS-E-05112026-277690, Ministry of Railways. Official headline: “Publication of notification in part II of sec... [CG-AS-E-05112026-277690]”. Source text includes: “Gazette ID CG-AS-E-05112026-277690. The eGazette homepage lists this extraordinary issue. The PDF is the download control beside that ID.”.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "566f303c96fb0188",
+      "source": "egazette",
+      "source_name": "Gazette of India",
+      "feed": "egazette-extraordinary",
+      "title": "Publication of notification under Section 3D... [CG-DL-E-05112026-277689]",
+      "url": "https://egazette.gov.in/",
+      "date": "2026-11-05",
+      "date_precision": "published",
+      "excerpt": "Gazette ID CG-DL-E-05112026-277689. The eGazette homepage lists this extraordinary issue. The PDF is the download control beside that ID.",
+      "instrument": "Extraordinary Gazette CG-DL-E-05112026-277689",
+      "body_name": "Ministry of Road Transport and Highways",
+      "language": "en",
+      "sectors": [],
+      "what_changed": "Listed by the source as Extraordinary Gazette CG-DL-E-05112026-277689, Ministry of Road Transport and Highways. Official headline: “Publication of notification under Section 3D... [CG-DL-E-05112026-277689]”. Source text includes: “Gazette ID CG-DL-E-05112026-277689. The eGazette homepage lists this extraordinary issue. The PDF is the download control beside that ID.”.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
     {
       "id": "77d1a3442729a3d4",
       "source": "rbi",
@@ -25,7 +589,7 @@
       "impact_from_notice": true,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-05T08:48:14+05:30"
     },
     {
@@ -48,7 +612,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-05T08:48:14+05:30"
     },
     {
@@ -71,7 +635,7 @@
       "impact_from_notice": true,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-05T08:48:14+05:30"
     },
     {
@@ -94,7 +658,7 @@
       "impact_from_notice": true,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-05T08:48:14+05:30"
     },
     {
@@ -117,7 +681,7 @@
       "impact_from_notice": true,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-05T08:48:14+05:30"
     },
     {
@@ -140,7 +704,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-05T08:48:14+05:30"
     },
     {
@@ -163,7 +727,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-05T08:48:14+05:30"
     },
     {
@@ -186,7 +750,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-05T08:48:14+05:30"
     },
     {
@@ -209,7 +773,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-05T08:48:14+05:30"
     },
     {
@@ -533,7 +1097,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-04T15:00:51+05:30"
     },
     {
@@ -556,7 +1120,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-04T15:00:51+05:30"
     },
     {
@@ -581,7 +1145,7 @@
       "impact_from_notice": true,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-04T15:00:51+05:30"
     },
     {
@@ -606,7 +1170,7 @@
       "impact_from_notice": true,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-04T15:00:51+05:30"
     },
     {
@@ -794,7 +1358,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-04T15:00:51+05:30"
     },
     {
@@ -817,7 +1381,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-04T15:00:51+05:30"
     },
     {
@@ -993,7 +1557,7 @@
       "impact_from_notice": true,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-04T08:46:20+05:30"
     },
     {
@@ -1016,7 +1580,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-04T08:46:20+05:30"
     },
     {
@@ -1039,7 +1603,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-04T08:46:20+05:30"
     },
     {
@@ -1062,7 +1626,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-04T08:46:20+05:30"
     },
     {
@@ -1085,7 +1649,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-04T08:46:20+05:30"
     },
     {
@@ -1716,7 +2280,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-03T15:14:16+05:30"
     },
     {
@@ -1787,7 +2351,7 @@
       "impact_from_notice": true,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-03T08:46:15+05:30"
     },
     {
@@ -1810,7 +2374,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-03T08:46:15+05:30"
     },
     {
@@ -1833,7 +2397,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-03T08:46:15+05:30"
     },
     {
@@ -1856,7 +2420,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-03T08:46:15+05:30"
     },
     {
@@ -1879,7 +2443,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-03T08:46:15+05:30"
     },
     {
@@ -1902,7 +2466,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-03T08:46:15+05:30"
     },
     {
@@ -1925,7 +2489,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-03T08:46:15+05:30"
     },
     {
@@ -1948,7 +2512,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-03T08:46:15+05:30"
     },
     {
@@ -1971,7 +2535,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-03T08:46:15+05:30"
     },
     {
@@ -1994,7 +2558,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-03T08:46:15+05:30"
     },
     {
@@ -2017,7 +2581,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-03T08:46:15+05:30"
     },
     {
@@ -2040,7 +2604,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-03T08:46:15+05:30"
     },
     {
@@ -2063,7 +2627,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-03T08:46:15+05:30"
     },
     {
@@ -2086,7 +2650,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-03T08:46:15+05:30"
     },
     {
@@ -2109,7 +2673,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-03T08:46:15+05:30"
     },
     {
@@ -2132,7 +2696,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-03T08:46:15+05:30"
     },
     {
@@ -2155,7 +2719,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-03T08:46:15+05:30"
     },
     {
@@ -2830,7 +3394,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-02T15:10:18+05:30"
     },
     {
@@ -3202,7 +3766,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-01T08:45:11+05:30"
     },
     {
@@ -4048,7 +4612,7 @@
       "impact_from_notice": true,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-31T08:45:11+05:30"
     },
     {
@@ -4071,7 +4635,7 @@
       "impact_from_notice": true,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-31T08:45:11+05:30"
     },
     {
@@ -4282,7 +4846,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-31T08:45:11+05:30"
     },
     {
@@ -6204,7 +6768,7 @@
       "impact_from_notice": true,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-28T08:43:28+05:30"
     },
     {
@@ -6229,7 +6793,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-28T08:43:28+05:30"
     },
     {
@@ -6252,7 +6816,7 @@
       "impact_from_notice": true,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-28T08:43:28+05:30"
     },
     {
@@ -6744,7 +7308,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -7314,7 +7878,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -7339,7 +7903,7 @@
       "impact": "The official text says an existing instruction is amended or revised. Check the source for whether a form, condition, or list you already follow has changed.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -7364,7 +7928,7 @@
       "impact": "The official text says an existing instruction is amended or revised. Check the source for whether a form, condition, or list you already follow has changed.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -7433,7 +7997,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -7688,7 +8252,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -7832,7 +8396,7 @@
       "impact": "The official text says an existing instruction is amended or revised. Check the source for whether a form, condition, or list you already follow has changed.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -7857,7 +8421,7 @@
       "impact": "The official text says an existing instruction is amended or revised. Check the source for whether a form, condition, or list you already follow has changed.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -8235,7 +8799,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -8459,7 +9023,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -8482,7 +9046,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -8505,7 +9069,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -8528,7 +9092,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -8824,7 +9388,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -8847,7 +9411,7 @@
       "impact": "The official text refers to a timeline. Read the source for the date before you rely on it. PolicyPulse does not restate a deadline that is not in the headline.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -8872,7 +9436,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -9016,7 +9580,7 @@
       "impact": "The official text refers to a timeline. Read the source for the date before you rely on it. PolicyPulse does not restate a deadline that is not in the headline.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -9088,7 +9652,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -9111,7 +9675,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -9285,7 +9849,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -9310,7 +9874,7 @@
       "impact": "The official text mentions a registration, licence, or compliance step. Open the source to see who it applies to.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -9435,7 +9999,7 @@
       "impact": "The official text says an existing instruction is amended or revised. Check the source for whether a form, condition, or list you already follow has changed. The official text mentions a registration, licence, or compliance step. Open the source to see who it applies to.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -9458,7 +10022,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -10227,7 +10791,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -10424,7 +10988,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -10447,7 +11011,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -10470,7 +11034,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -10493,7 +11057,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -10708,7 +11272,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -10779,7 +11343,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -10802,7 +11366,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -11219,7 +11783,7 @@
       "impact": "The official text says an existing instruction is amended or revised. Check the source for whether a form, condition, or list you already follow has changed.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -11292,7 +11856,7 @@
       "impact": "The official text says an existing instruction is amended or revised. Check the source for whether a form, condition, or list you already follow has changed.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -11731,7 +12295,7 @@
       "impact": "The official text refers to a timeline. Read the source for the date before you rely on it. PolicyPulse does not restate a deadline that is not in the headline. The official text mentions a duty, tariff, or incentive. The rate, if any, is only in the source document. Do not take a number from this brief.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -12029,7 +12593,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -12175,7 +12739,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -12624,7 +13188,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -12693,7 +13257,7 @@
       "impact": "The official text refers to a timeline. Read the source for the date before you rely on it. PolicyPulse does not restate a deadline that is not in the headline.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -12741,7 +13305,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -12839,7 +13403,7 @@
       "impact": "The official text mentions a duty, tariff, or incentive. The rate, if any, is only in the source document. Do not take a number from this brief.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -12862,7 +13426,7 @@
       "impact": "The official text mentions a registration, licence, or compliance step. Open the source to see who it applies to.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -13135,7 +13699,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -13158,7 +13722,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -14733,7 +15297,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -21722,6 +22286,236 @@
       "impact_from_notice": false
     },
     {
+      "id": "pib-2333033",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-rss",
+      "title": "सूक्ष्म, लघु एवं मध्यम उद्यम मंत्रालय (एमएसएमई) ने महिला नेतृत्व वाले एमएसएमई को सहायता प्रदान करने के लिए एसआरआई फंड पर जागरूकता कार्यशाला आयोजित की",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2333033&lang=1",
+      "date": null,
+      "date_precision": "missing",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "",
+      "language": "hi",
+      "sectors": [],
+      "what_changed": "Listed by the source as PIB press release. Official headline: “सूक्ष्म, लघु एवं मध्यम उद्यम मंत्रालय (एमएसएमई) ने महिला नेतृत्व वाले एमएसएमई को सहायता प्रदान करने के लिए एसआरआई फंड पर जागरूकता कार्यशाला आयोजित की”. This headline is in Hindi on the official feed. The English wording above is the headline itself, not a translation.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "pib-2333009",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-rss",
+      "title": "अंतर-मंत्रालयी समूह ने कैबिनेट द्वारा प्रत्यायोजित वैकल्पिक तंत्र द्वारा अनुमोदन के लिए 1,100 करोड़ रुपये से अधिक के परिसंपत्ति मुद्रीकरण प्रस्तावों की सिफारिश की",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2333009&lang=1",
+      "date": null,
+      "date_precision": "missing",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "",
+      "language": "hi",
+      "sectors": [],
+      "what_changed": "Listed by the source as PIB press release. Official headline: “अंतर-मंत्रालयी समूह ने कैबिनेट द्वारा प्रत्यायोजित वैकल्पिक तंत्र द्वारा अनुमोदन के लिए 1,100 करोड़ रुपये से अधिक के परिसंपत्ति मुद्रीकरण प्रस्तावों की सिफारिश की”. This headline is in Hindi on the official feed. The English wording above is the headline itself, not a translation.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "pib-2333014",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-rss",
+      "title": "केंद्रीय स्वास्थ्य एवं परिवार कल्याण मंत्रालय ने विशेष अभियान 6 के तहत शत प्रतिशत लक्ष्य हासिल किए",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2333014&lang=1",
+      "date": null,
+      "date_precision": "missing",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "",
+      "language": "hi",
+      "sectors": [],
+      "what_changed": "Listed by the source as PIB press release. Official headline: “केंद्रीय स्वास्थ्य एवं परिवार कल्याण मंत्रालय ने विशेष अभियान 6 के तहत शत प्रतिशत लक्ष्य हासिल किए”. This headline is in Hindi on the official feed. The English wording above is the headline itself, not a translation.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "pib-2333002",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-rss",
+      "title": "एनआरए, आईसीएआर-एनबीएसएस और एलयूपी और डीओएलआर ने विज्ञान आधारित वाटरशेड प्रबंधन को मजबूत करने के लिए राष्ट्रीय स्तर के परामर्श का आयोजन किया",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2333002&lang=1",
+      "date": null,
+      "date_precision": "missing",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "",
+      "language": "hi",
+      "sectors": [],
+      "what_changed": "Listed by the source as PIB press release. Official headline: “एनआरए, आईसीएआर-एनबीएसएस और एलयूपी और डीओएलआर ने विज्ञान आधारित वाटरशेड प्रबंधन को मजबूत करने के लिए राष्ट्रीय स्तर के परामर्श का आयोजन किया”. This headline is in Hindi on the official feed. The English wording above is the headline itself, not a translation.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "pib-2332922",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-rss",
+      "title": "एनएचआरसी के हस्तक्षेप से हैदराबाद के केंद्रीय कारागार में विविध लैंगिक पहचान और अभिव्यक्ति वाले लोगों के लिए लिंग-तटस्थ प्रकोष्ठ की स्थापना की गई",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2332922&lang=1",
+      "date": null,
+      "date_precision": "missing",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "",
+      "language": "hi",
+      "sectors": [],
+      "what_changed": "Listed by the source as PIB press release. Official headline: “एनएचआरसी के हस्तक्षेप से हैदराबाद के केंद्रीय कारागार में विविध लैंगिक पहचान और अभिव्यक्ति वाले लोगों के लिए लिंग-तटस्थ प्रकोष्ठ की स्थापना की गई”. This headline is in Hindi on the official feed. The English wording above is the headline itself, not a translation.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "pib-2332885",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-rss",
+      "title": "प्रधानमंत्री ने सत्य, ज्ञान और सदाचार के महत्व पर जोर देते हुए एक संस्कृत सुभाषितम् साझा किया",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2332885&lang=1",
+      "date": null,
+      "date_precision": "missing",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "",
+      "language": "hi",
+      "sectors": [],
+      "what_changed": "Listed by the source as PIB press release. Official headline: “प्रधानमंत्री ने सत्य, ज्ञान और सदाचार के महत्व पर जोर देते हुए एक संस्कृत सुभाषितम् साझा किया”. This headline is in Hindi on the official feed. The English wording above is the headline itself, not a translation.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "pib-2332845",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-rss",
+      "title": "विकसित भारत-जी राम जी के अंतर्गत चारा उत्पादन बढ़ाने, पशुधन संबंधी बुनियादी सुविधाओं को मजबूत करने के लिए ग्रामीण विकास विभाग एवं पशुपालन और डेयरी विभाग (डीएएचडी) की संयुक्त पहल",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2332845&lang=1",
+      "date": null,
+      "date_precision": "missing",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "",
+      "language": "hi",
+      "sectors": [],
+      "what_changed": "Listed by the source as PIB press release. Official headline: “विकसित भारत-जी राम जी के अंतर्गत चारा उत्पादन बढ़ाने, पशुधन संबंधी बुनियादी सुविधाओं को मजबूत करने के लिए ग्रामीण विकास विभाग एवं पशुपालन और डेयरी विभाग (डीएएचडी) की संयुक्त पहल”. This headline is in Hindi on the official feed. The English wording above is the headline itself, not a translation.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "pib-2332847",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-rss",
+      "title": "खनन मंत्रियों का चौथा सम्मेलन 5-6 नवंबर, 2026 को गोवा में आयोजित होगा",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2332847&lang=1",
+      "date": null,
+      "date_precision": "missing",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "",
+      "language": "hi",
+      "sectors": [],
+      "what_changed": "Listed by the source as PIB press release. Official headline: “खनन मंत्रियों का चौथा सम्मेलन 5-6 नवंबर, 2026 को गोवा में आयोजित होगा”. This headline is in Hindi on the official feed. The English wording above is the headline itself, not a translation.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "pib-2332846",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-rss",
+      "title": "केंद्रीय पर्यावरण मंत्री श्री भूपेंद्र यादव ने आर्मेनिया के येरेवन में आयोजित सीबीडी सीओपी-17 में 'भारत के अन्य प्रभावी क्षेत्र-आधारित संरक्षण उपायों (आई-ओईसीएम), 2026' के निर्धारण के लिए दिशानिर्देश जारी किए",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2332846&lang=1",
+      "date": null,
+      "date_precision": "missing",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "",
+      "language": "hi",
+      "sectors": [],
+      "what_changed": "Listed by the source as PIB press release. Official headline: “केंद्रीय पर्यावरण मंत्री श्री भूपेंद्र यादव ने आर्मेनिया के येरेवन में आयोजित सीबीडी सीओपी-17 में 'भारत के अन्य प्रभावी क्षेत्र-आधारित संरक्षण उपायों (आई-ओईसीएम), 2026' के निर्धारण के लिए दिशानिर्देश जारी किए”. This headline is in Hindi on the official feed. The English wording above is the headline itself, not a translation.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
+      "id": "pib-2332848",
+      "source": "pib",
+      "source_name": "Press Information Bureau",
+      "feed": "pib-rss",
+      "title": "भारत में वैकल्पिक विवाद समाधान प्रणाली को प्रोत्साहन देने और ईज ऑफ डूइंग बिजनेस के लिए आईआईसीए ने आईएएमसी के साथ समझौता ज्ञापन पर हस्ताक्षर किए",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2332848&lang=1",
+      "date": null,
+      "date_precision": "missing",
+      "excerpt": "",
+      "instrument": "PIB press release",
+      "body_name": "",
+      "language": "hi",
+      "sectors": [],
+      "what_changed": "Listed by the source as PIB press release. Official headline: “भारत में वैकल्पिक विवाद समाधान प्रणाली को प्रोत्साहन देने और ईज ऑफ डूइंग बिजनेस के लिए आईआईसीए ने आईएएमसी के साथ समझौता ज्ञापन पर हस्ताक्षर किए”. This headline is in Hindi on the official feed. The English wording above is the headline itself, not a translation.",
+      "who_affected": "No sector keyword from the PolicyPulse list matched this text, so the item stays on the latest feed and is not filed on a sector page.",
+      "impact": "",
+      "impact_from_notice": false,
+      "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
+      "basis": "keyword-rules",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
+      "first_seen": "2026-11-05T15:09:52+05:30"
+    },
+    {
       "id": "pib-2332838",
       "source": "pib",
       "source_name": "Press Information Bureau",
@@ -21741,7 +22535,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-05T08:48:14+05:30"
     },
     {
@@ -21764,7 +22558,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-05T08:48:14+05:30"
     },
     {
@@ -21787,7 +22581,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-05T08:48:14+05:30"
     },
     {
@@ -21810,7 +22604,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-05T08:48:14+05:30"
     },
     {
@@ -21833,7 +22627,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-05T08:48:14+05:30"
     },
     {
@@ -21856,7 +22650,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-05T08:48:14+05:30"
     },
     {
@@ -21879,7 +22673,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-05T08:48:14+05:30"
     },
     {
@@ -21902,7 +22696,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-05T08:48:14+05:30"
     },
     {
@@ -21925,7 +22719,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-05T08:48:14+05:30"
     },
     {
@@ -21948,7 +22742,7 @@
       "impact_from_notice": false,
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-11-05T08:48:14+05:30"
     },
     {
@@ -28745,7 +29539,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -28768,7 +29562,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     },
@@ -28793,7 +29587,7 @@
       "impact": "The official text mentions a registration, licence, or compliance step. Open the source to see who it applies to.",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": true
     },
@@ -28816,7 +29610,7 @@
       "impact": "",
       "action": "Open the official source linked on this page and check whether it changes anything you file, ship, price, or lend. This brief is a reading aid, not legal, tax, or investment advice.",
       "basis": "keyword-rules",
-      "fetched_at": "2026-11-05T08:48:14+05:30",
+      "fetched_at": "2026-11-05T15:09:52+05:30",
       "first_seen": "2026-10-27T13:42:07+05:30",
       "impact_from_notice": false
     }
