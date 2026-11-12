@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-11T15:08:55+05:30",
-  "item_count": 1564,
+  "generated_at": "2026-11-12T15:30:33+05:30",
+  "item_count": 1610,
   "source_families": [
     "cbic",
     "dgft",
@@ -22,7 +22,7 @@
       "name": "Press Information Bureau",
       "url": "https://www.pib.gov.in/allRel.aspx?reg=3&lang=1",
       "ok": true,
-      "fetched": 27,
+      "fetched": 31,
       "error": null
     },
     {
@@ -38,7 +38,7 @@
       "name": "SEBI",
       "url": "https://www.sebi.gov.in/sebirss.xml",
       "ok": true,
-      "fetched": 55,
+      "fetched": 54,
       "error": null
     },
     {
