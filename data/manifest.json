@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-13T15:14:47+05:30",
-  "item_count": 1649,
+  "generated_at": "2026-11-14T14:37:29+05:30",
+  "item_count": 1689,
   "source_families": [
     "cbic",
     "dgft",
@@ -13,8 +13,7 @@
     "cbic",
     "egazette",
     "pib",
-    "rbi",
-    "sebi"
+    "rbi"
   ],
   "llm": "off",
   "sources": [
@@ -23,7 +22,7 @@
       "name": "Press Information Bureau",
       "url": "https://www.pib.gov.in/allRel.aspx?reg=3&lang=1",
       "ok": true,
-      "fetched": 16,
+      "fetched": 28,
       "error": null
     },
     {
@@ -38,9 +37,9 @@
       "id": "sebi",
       "name": "SEBI",
       "url": "https://www.sebi.gov.in/sebirss.xml",
-      "ok": true,
-      "fetched": 54,
-      "error": null
+      "ok": false,
+      "fetched": 0,
+      "error": "HTTPError: HTTP Error 530: BLOCKED"
     },
     {
       "id": "cbic",
