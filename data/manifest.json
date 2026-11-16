@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-15T15:07:45+05:30",
-  "item_count": 1733,
+  "generated_at": "2026-11-16T15:26:15+05:30",
+  "item_count": 1782,
   "source_families": [
     "cbic",
     "dgft",
@@ -23,7 +23,7 @@
       "name": "Press Information Bureau",
       "url": "https://www.pib.gov.in/allRel.aspx?reg=3&lang=1",
       "ok": true,
-      "fetched": 40,
+      "fetched": 38,
       "error": null
     },
     {
