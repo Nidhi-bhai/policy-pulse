@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-23T16:26:02+05:30",
-  "item_count": 2166,
+  "generated_at": "2026-11-24T18:11:44+05:30",
+  "item_count": 2218,
   "source_families": [
     "cbic",
     "dgft",
@@ -11,7 +11,6 @@
   ],
   "sources_ok": [
     "cbic",
-    "egazette",
     "pib",
     "rbi",
     "sebi"
@@ -23,7 +22,7 @@
       "name": "Press Information Bureau",
       "url": "https://www.pib.gov.in/allRel.aspx?reg=3&lang=1",
       "ok": true,
-      "fetched": 36,
+      "fetched": 39,
       "error": null
     },
     {
@@ -62,9 +61,9 @@
       "id": "egazette",
       "name": "Gazette of India",
       "url": "https://egazette.gov.in/",
-      "ok": true,
-      "fetched": 7,
-      "error": null
+      "ok": false,
+      "fetched": 0,
+      "error": "HTTPError: HTTP Error 500: Internal Server Error"
     }
   ]
 }
